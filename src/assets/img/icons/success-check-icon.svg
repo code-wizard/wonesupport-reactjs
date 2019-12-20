@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="11px" viewBox="0 0 14 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>success-check-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pricing-Copy-7" transform="translate(-804.000000, -850.000000)" fill="#6DD400" fill-rule="nonzero">
+            <g id="Group-44" transform="translate(257.000000, 295.000000)">
+                <path d="M559.354654,555 L558.531981,555.855972 C556.275684,558.188037 554.217612,560.481988 552.037962,562.771332 L549.366095,560.571321 L548.456058,559.820476 L547,561.697601 L547.910037,562.448454 L551.404577,565.331729 L552.21997,566 L552.955279,565.241627 C555.464238,562.648457 557.716278,560.09659 560.177327,557.5529 L561,556.696928 L559.354654,555 Z" id="success-check-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

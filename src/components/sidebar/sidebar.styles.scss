@@ -1,0 +1,98 @@
+.wone-sidebar {
+    background-color: #F4F7FA;
+    width: 70px;
+    border-right: 1px solid #DEDEDE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: width 0.25s ease, background 0.25s ease;
+
+    .wone-logo {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wone-logo a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        li {
+            height: 60px;
+            a {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: 0.2s ease-in-out;
+                .-icon {
+                    width: 20px;
+                    height: 20px;
+                }
+                &:hover {
+                    background-color: #EDEFF1;
+                }
+                .menu-title{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.wone-sidebar ul li * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.-icon i {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.home-icon {
+    background-image: url(../../assets/img/icons/home-icon.svg);
+}
+.users-icon {
+    background-image: url(../../assets/img/icons/users-icon.svg);
+}
+.timing-icon {
+    background-image: url(../../assets/img/icons/timing-icon.svg);
+}
+.progress-icon {
+    background-image: url(../../assets/img/icons/progress-icon.svg);
+}
+.settings-icon {
+    background-image: url(../../assets/img/icons/settings-icon.svg);
+}
+
+.sidebar-icon-only .wone-sidebar {
+    width: 255px;
+}
+.sidebar-icon-only .wone-sidebar ul li a{
+    justify-content: flex-start;
+    padding: 0px 35px;
+}
+.sidebar-icon-only .wone-sidebar .-icon {
+    margin: 0;
+    margin-right:1.25rem;
+}
+.sidebar-icon-only .wone-sidebar {
+    .menu-title {
+        display: inline-block;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wone-sidebar {
+        display: none;
+    }
+}   

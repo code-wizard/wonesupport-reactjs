@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="29px" viewBox="0 0 32 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>select-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-22.9%" y="-97.0%" width="145.7%" height="293.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-40" transform="translate(-1170.000000, -199.000000)" fill="#6F7376" fill-rule="nonzero">
+            <g id="Group-27" transform="translate(410.000000, 193.000000)">
+                <g id="Group-7" transform="translate(596.000000, 0.000000)">
+                    <g id="Group-4" filter="url(#filter-1)" transform="translate(66.000000, 0.000000)">
+                        <g id="Group-3" transform="translate(20.000000, 8.000000)">
+                            <path d="M98.2903364,6 L89.7184956,6 C89.4282924,5.9983245 89.1659119,6.17238029 89.0546273,6.44040369 C88.9433428,6.7084271 89.0052757,7.01713932 89.2113284,7.22149947 L93.4972488,11.5074199 C93.7758604,11.7843786 94.2258285,11.7843786 94.5044401,11.5074199 L98.7903605,7.22149947 C98.9954856,7.01805461 99.0578664,6.71108067 98.9484166,6.44371039 C98.8389668,6.1763401 98.5792389,6.00122349 98.2903364,6 Z" id="select-arrow"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

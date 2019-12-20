@@ -1,0 +1,668 @@
+.wone__con-card-links {
+  padding: 1em;
+  .form-inline {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #F8F8F8;
+    .input-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 10px;
+      width: 100%;
+    }
+    .-icon{
+      width: 15px;
+      height: 15px;
+    }
+    input{
+      border: none;
+      font-size: 12px;
+      background: transparent;
+    }
+  }
+}
+.wone__card-div {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  height: 35px;
+  margin: 10px 0;
+  .-icon{
+    margin-right: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+// Card
+ul{
+  &.wone__unstyled {
+    padding: 0;
+  }
+}
+.wone__unstyled{
+  .media {
+    padding: 10px;
+    background: #FFFFFF;
+    border: 1px solid #dedede;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    height: 80px;
+    overflow: hidden;
+    .profile-img {
+      width: 30px;
+      height: 30px;
+    }
+    .media-body {
+      padding: 0 0 0 10px;
+      width: 100%;
+      h6{
+        color: $admin-text;
+        height: 32px;
+        line-height: 17px;
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        margin-bottom: 10px;
+      }
+      span{
+        font-size: 10px;
+        opacity: .5;
+        display: block;
+      }
+    }
+  }
+}
+.wone__listing-view {
+  height: 65vh;
+  overflow: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+.wone__tab__style{
+  display: flex;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+  margin: 15px 0;
+  height: 40px;
+  li{
+    border: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    &:first-child{
+      border-radius: 5px 0 0 5px;
+      border-right: 1px solid transparent;
+    }
+    &:last-child{
+      border-radius: 0 5px 5px 0;
+      border-left: 1px solid transparent;
+    }
+    a{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 400;
+      width: 100%;
+      padding: 5px;
+      text-decoration: none;
+      color: $admin-text;
+      background: $white;
+      transition: $transition;
+      &:hover,
+      &.active{
+        background: #EBEBEB;
+      }
+    }
+  }
+  .-icon {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 0 5px;
+  }
+}
+.links__section-icon {
+  padding: 0;
+  display: flex;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  li{
+    display: block;
+    > a {
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $white;
+      padding: 5px;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      .-icon{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+// Chat Arial
+.wone__inner-main{
+  &.wone__admin-chat {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    .wone__tab-content.no-tabs{
+      width: 100%;
+      .form-control {
+        max-width: 100%;
+      }
+      .chat-inputs .chat-share-file {
+        width: 25px;
+        height: 23px;
+        top: 10px;
+      }
+    }
+    // .chat-messages {
+    //   height: 100%;
+    // }
+  }
+}
+// Profile details panel
+.wone__right-view{
+  display: none;
+  width: 280px;
+  border-left: 1px solid $admin-border;
+  height: 100%;
+  .wone__side-detail-header{
+    background-image: radial-gradient(50% 100%, #FFFFFF 0%, #cccccc38 100%);
+    border: 1px solid #979797;
+    text-align: center;
+    padding: 2em;
+    h5{
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+    p{
+      font-weight: 100;
+      margin: 0;
+    }
+  }
+}
+.wone__image {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  border-radius: 100%;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 15px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.wone__side-detail-body {
+  padding: 1em 1.5em;
+  height: 410px;
+  max-height: 52vh;
+  overflow: hidden;
+  p{
+    color: $admin-para;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  .wone__share-item{
+    border: none;
+    position: relative;
+    .profile-img {
+      width: 61px;
+      height: 60px;
+      border-radius: 3px;
+      overflow: hidden
+    }
+    .media-body{
+      padding-right: 15px;
+      h6 {
+        height: 17px;
+        line-height: 17px;
+        margin: 5px 0;
+        color: $admin-para;
+      }
+    }
+    .-icon{
+      position: absolute;
+      right: 0px;
+      top: 17px;
+      width: 20px;
+      height: 15px;
+      transition: $transition;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+.option_wrapper {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 100;
+  color: $admin-para;
+  a{
+    &:first-child{
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+.wone__unstyled.wone__share-list {
+  height: 300px;
+  overflow: scroll;
+  padding-bottom: 4em;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  .media{
+    margin-bottom: 0px;
+    padding: 0;
+  }
+}
+
+.admin__chat-board{
+  position: relative;
+  width: 100%;
+  height: 83vh;
+  background: $white;
+}
+
+.admin__chat-board{
+  @extend .chat-messages;
+  .profile-img {
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+  }
+  .other-message{
+    display: flex;
+    .message-pad{
+      background: #F3F7FA;
+    }
+    .options {
+      right: -25px;
+    }
+  }
+  .my-message {
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    .message-pad.con_pad{
+      opacity: 1;
+      color: #353535;
+      background: #6CAFDE;
+      border: 1px solid #6CAFDE;
+      border-radius: 6px 0 6px 6px;
+    }
+    .options {
+      left: -30px;
+      width: 12px;
+      cursor: pointer;
+    }
+  }
+  .message-wrapper {
+    p{
+      font-size: 12px;
+      font-weight: 100;
+      color: $admin-para;
+      margin-top: 5px;
+    }
+    .message-pad {
+      opacity: 1;
+
+      color: $admin-para;
+      border-radius: 0 6px 6px 6px;
+      max-width: 75%;
+      padding: 10px;
+    }
+  }
+  .options {
+    top: 0;
+    .-icon{
+      height: 15px;
+    }
+  }
+}
+.admin__profile-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  h6{
+    margin: 0;
+    color: $admin-text;
+    font-weight: 300;
+  }
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 15px;
+    display: flex;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+// phone call overlay
+.call__overlay{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.95;
+  background: #0F1418;
+  z-index: 999;
+}
+.call__options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  .service-profile-img {
+    color: $white;
+    flex-direction: column;
+    font-weight: 100;
+    .profile-img {
+      margin-bottom: 25px;
+    }
+    h6 {
+      font-size: 25px;
+      font-weight: 100;
+    }
+    p{
+      font-weight: 100;
+      font-size: 12px;
+      font-weight: 100;
+    }
+  }
+  .call__header{
+    color: $white;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+  }
+  .expand_icon {
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    background: rgba(250,250,250,.5);
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+      transform: scale(1.02);
+    }
+  }
+  .call__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  img{
+    object-fit: cover;
+  }
+}
+.on-call,
+.add_tocall{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.on-call {
+  background: $white;
+  color: $primary-color;
+}
+.users__options{
+  display: flex;
+}
+.add_tocall{
+  background: #303030;
+}
+.call__overlay.small-size {
+  width: 240px;
+  height: 185px;
+  top: 60px;
+  left: 77%;
+  border-radius: 5px;
+  .users__options {
+    display: flex;
+    flex-direction: column;
+    .on-call,
+    .add_tocall {
+      width: 30px;
+      height: 30px;
+      margin: 0 0 5px;
+      font-size: 10px;
+      .-icon {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+  .control__buttons {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    .-icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .call__options {
+    .call__header {
+      padding: 10px;
+      .expand_icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .service-profile-img {
+    .profile-img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+       > span {
+        padding: 2px;
+        animation: none;
+        > span{
+          padding: 2px;
+          span {
+           padding: 3px
+          }
+        }
+      }
+    }
+    h6 {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 10px;
+    }
+  }
+
+}
+
+// Dialer
+.dial-modal{
+  .modal-dialog{
+    &.modal-dialog-centered {
+      width: 350px;
+    }
+  }
+  .modal-content{
+    padding: 1em 1.5em;
+  }
+  .modal-header{
+    border: none;
+    padding-bottom: 0;
+  }
+  .dial__options {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dial__chat,
+  .dial__call{
+    border-radius: 5px;
+    width: 125px;
+    margin: 10px 0;
+    border: none;
+    transition: $transition;
+    i{
+      filter: brightness(5);
+    }
+    &:hover{
+      opacity: .8;
+    }
+  }
+  .dial__chat{
+    background: #2196F3;
+  }
+  .dial__call{
+    background: #00E177;
+  }
+}
+.dial__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  input[type="text"] {
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+.dial__dialpad{
+  .dial__pad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .dial__number {
+      width: 80px;
+      height: 40px;
+      text-align: center;
+      margin-bottom: 14px;
+      background: #FDFDFD;
+      border: 1px solid #BEC3CB;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: JFFlat-Regular;
+      cursor: pointer;
+      transition: $transition;
+      > span{
+        &:first-child{
+          font-size: 22px;
+          color: #5A5A5A;
+          letter-spacing: 0;
+          margin-right: 10px;
+        }
+        &:last-child{
+          font-family: Helvetica;
+          font-size: 14px;
+          color: #B1B1B1;
+          letter-spacing: 0;
+          text-align: right;
+        }
+
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.dial__tabs{
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link{
+    border: none;
+    opacity: 1;
+  }
+  .nav-link{
+    padding: 10px 0 0;
+    font-weight: 100;
+    font-size: 12px;
+    opacity: .7;
+    transition: $transition;
+    &:hover{
+      border: 1px solid transparent;
+      opacity: 1;
+    }
+  }
+  .nav-tabs{
+    justify-content: space-between;
+    border: none;
+    .-icon{
+      width: 20px;
+      height: 20px;
+      margin-bottom: 5px;
+    }
+    font-size: 12px;
+    font-weight: 100;
+  }
+}

@@ -1,0 +1,215 @@
+/*********************************************
+  Defaulting Styles
+**********************************************/
+
+/*********************************************
+  Inputs
+**********************************************/
+
+.form-wrapper{
+  .form-control{
+    height: 50px;
+    font-size: 15px;
+    padding: 10px 20px;
+    font-weight: 100;
+    transition: .2s ease-in-out;
+    color: $input-color;
+    background-color: $input-bg;
+    &:not(:placeholder-shown),
+    &:focus{
+      color: #495057;
+      background-color: $white;
+      border-color: transparent;
+      outline: 0;
+      box-shadow: none;
+      border-left: 15px solid $primary-color;
+    }
+  }
+  .form-check {
+    font-size: 13px;
+    font-weight: 100;
+    margin: 1.5rem 0;
+  }
+}
+
+.log_landing{
+  .form-group{
+    position: relative;
+    .eye-view{
+      position: absolute;
+      right: 15px;
+      top: 30%;
+      opacity: .7;
+      transition: .2s ease-in-out;
+      cursor: pointer;
+      i{
+        font-size: 20px;
+      }
+      &:hover{
+        opacity: .9;
+      }
+    }
+  }
+}
+.selector{
+  color: $input-color;
+  background-color: $input-bg;
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  .view-flag {
+    width: 45px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.country-select {
+  .country-list {
+      left: -20px;
+      border-radius: 3px;
+      font-size: 13px;
+      .country {
+        padding: 10px 10px;
+    }
+    .flag{
+      margin-right: 15px;
+    }
+  }
+
+ &.inside{
+    .flag-dropdown{
+      .arrow{
+        right: 0px;
+      }
+      &:hover {
+      cursor: pointer;
+      background: transparent;
+      .selected-flag {
+        background-color: transparent;
+      }
+    }
+    }
+  }
+}
+// Wone Radio
+.wone_radio-group{
+  display: flex;
+  height: 40px;
+  position: relative;
+}
+.wone_radio {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 90px;
+  text-align: center;
+  margin-bottom: 0;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    ~ .checkmark {
+      background-color: #ccc;
+    }
+    &:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+    &:checked ~ .checkmark:after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    border-radius: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:after {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius:0;
+      color: $white;
+      background: transparent;
+      font-weight: 100;
+      font-size: 13px;
+      text-align: center;
+   }
+  }
+  &.enabled{
+    .checkmark{
+      &:after{
+        content: "Enabled"
+      }
+    }
+  }
+  &.disabled{
+    .checkmark{
+      &:after{
+        content: "Disabled"
+      }
+    }
+  }
+}
+.call-status{
+  width: 110px;
+  display: flex;
+  align-items: center;
+  background: #F8F9F9;
+  padding: 0 10px;
+  border-radius: 3px;
+  .status-call{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $admin-input;
+    opacity: 1;
+    &.active,
+    &.online{
+      background: green;
+    }
+  }
+  select{
+    &.form-control{
+      &.set-status {
+        width: 95px;
+        height: 25px;
+        font-size: 12px;
+        text-align: center !important;
+        background: transparent;
+        border: none;
+      }
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}

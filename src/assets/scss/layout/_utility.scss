@@ -1,0 +1,760 @@
+%ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.p-r-0{
+  padding-right: 0 !important;
+}
+.m-top-30{
+  margin-top: 30px;
+}
+.m-b-20{
+  margin-bottom: 20px;
+}
+.fixed{
+  position: fixed;
+  top: 0;
+}
+.custom-pad{
+  text-align: center;
+  font-size: 14px;
+  p{
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    margin-top: 1.2em;
+    margin-bottom: 0;
+  }
+}
+.header-content{
+  text-align: center;
+  padding: 1em 0;
+  p {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+.divider-line {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  &:after,
+  &:before{
+    content: "";
+    width: 43%;
+    height: 2px;
+    border-bottom: 2px dashed $border-color;
+    position: absolute;
+    top: 50%;
+  }
+  &:before{
+    left: 0;
+  }
+  &:after{
+    right: 0;
+  }
+  span{
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+.link-home{
+  a{
+    color: $link-color;
+    font-size: 12px;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    &:hover{
+      color: $white;
+    }
+  }
+}
+.facebook-icon,
+.google-icon{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+// Custom Wone icon
+.wone-icon{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 10px;
+  i{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.link-list{
+  &, a{
+    color: $white;
+    &:last-child{
+      margin-left: 15px;
+    }
+  }
+  a{
+    font-size: 13px;
+    transition: .2s ease-in-out;
+    &:hover{
+      text-decoration: none;
+      opacity: .7;
+    }
+  }
+}
+//  Svg icons
+.-icon{
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  &.wone-set{
+    width: 100%;
+    height: 100%;
+  }
+  i{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  &.link-icon{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 1px;
+  }
+}
+// Profile Image
+.profile-wrapper{
+  display: inline-block;
+  min-width: 180px;
+  font-size: 12px;
+  line-height: 35px;
+  padding-left: 20px;
+  vertical-align: middle;
+  > span{
+    margin-right: 10px;
+  }
+}
+.logged-in {
+  display: flex;
+  align-items: center;
+  min-width: 110px;
+  justify-content: space-between;
+  color: $white;
+  font-weight: 100;
+  font-size: 14px;
+  margin: 0 0 0 20px;
+  position: relative;
+  cursor: pointer;
+  .wrapp__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     > span{
+      margin: 0 10px 0 0;
+    }
+  }
+
+  .dropProfile{
+    display: none;
+    position: absolute;
+    top: 50px;
+    background: #fff;
+    right: 0;
+    width: 200px;
+    border-radius: 5px;
+    min-height: 100px;
+    text-align: left;
+    overflow: hidden;
+    ul{
+      margin: 0;
+      padding: 0;
+      li{
+        display: flex;
+        flex-direction: column;
+        height: 35px;
+        a{
+          height: 100%;
+          text-decoration: none;
+          padding: 5px 25px;
+          display: flex;
+          align-items: center;
+          font-size: 13px;
+          transition: $transition;
+          &:hover{
+            background: lighten($black, 90);
+          }
+        }
+      }
+    }
+  }
+}
+.profile-img{
+  width: 40px;
+  height: 40px;
+  float: left;
+  position: relative;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .img-placer {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  .status-icon{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: -3px;
+    background: $status-gray;
+    border: 2px solid $white;
+    &.online{
+      background: $status-blue;
+    }
+  }
+}
+.wone_error-pad {
+  background: $white;
+  box-shadow: $custom-box-shadow;
+  color: #585858;
+  font-size: 75%;
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  z-index: -1;
+  padding: 20px 26px 5px;
+  border-radius: 5px;
+  max-width: 310px;
+  min-width: 300px;
+
+
+  p {
+    margin-bottom: 5px;
+  }
+  ul {
+    margin: 0 0 5px;
+    font-size: 92%;
+    padding-left: 15px;
+    font-weight: 100;
+  }
+}
+/******************
+  Button Effects
+******************/
+@keyframes icon-shadow-pulse{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+  }
+  100%{
+    box-shadow: 0 0 0 35px rgba(0,0,0,0);
+  }
+}
+@keyframes icon-shadow-sm-pulse{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+  }
+  100%{
+    box-shadow: 0 0 0 15px rgba(0,0,0,0);
+  }
+}
+@keyframes icon-shadow-pulse-bg{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+  }
+  100%{
+    box-shadow: 0 0 0 70px rgba(0,0,0,0);
+  }
+}
+
+@keyframes link-breather{
+  0%{
+    border-left: 0px solid $primary-color;
+  }
+  100%{
+    border-left: 5px solid $primary-color
+  }
+}
+
+// Chat Board
+.chat-board{
+  background-color: $white;
+  background-image: url(../../assets/img/icons/chat-bg.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  box-shadow: $box-shadow;
+  height: 545px;
+  position: relative;
+  bottom: 0;
+  top: 0;
+  nav{
+    background-color: #F5F9FF;
+    height: 70px;
+    .-icon{
+      width: 35px;
+      height: 35px;
+      display: block;
+      margin: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+      &:hover{
+        background-color: $white;
+      }
+    }
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+.chat-inputs{
+  height: 70px;
+  padding: 15px 1.5em;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #f5f9ff;
+  .form-wrapper{
+    position: relative;
+    display: flex;
+  }
+  .form-control{
+    height: 40px;
+    border: none;
+    background: $white;
+    font-size: 13px;
+    padding-left: 50px;
+    &:not(:placeholder-shown),
+    &:focus{
+      border-left: none;
+    }
+  }
+  .chat-share-file{
+    width: 25px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    input{
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      top: 0;
+    }
+  }
+}
+
+/**************************************
+  Social Media Links
+**************************************/
+
+.et-social-media-list{
+  margin-bottom: 20px;
+  > a{
+    display: inline-block;
+  }
+  .social-link{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    background: #322F30;
+    border-radius: 5px;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+}
+// Chat Utility
+.message-pad{
+  // background: $primary-color;
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 11px;
+  font-weight: 100;
+  max-width: 230px;
+  min-width: 101px;
+  width: fit-content;
+  min-height: 34px;
+  opacity: 0.8;
+  position: relative;
+  &.file-style{
+    width: 164px;
+    height: 93px;
+    border-radius: 0px 10px;
+    padding: 5px 10px;
+    background: #f3f6ff;
+    overflow: hidden;
+    color: $chat-sub-header;
+    p{
+      margin-bottom: 0;
+      font-size: 13px;
+      color: $chat-header;
+      @extend %ellipsis;
+    }
+    span{
+      font-size: 10px;
+    }
+    > div{
+      background-color: #537cfd;
+      color: $white;
+      width: 100%;
+      height: 33px;
+      line-height: 33px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+      .-icon{
+        margin: 0;
+        width: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.chat-messages {
+  height: 55vh;
+  overflow: scroll;
+  padding: 1em 0 5em;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .profile-img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+  }
+
+  .other-message{
+    .message-wrapper {
+      display: inline-block;
+      position: relative;
+      .message-pad{
+        color: $white;
+        background: #537cfd;
+        border-radius: 0px 7px;
+        @extend .message-pad;
+      }
+    }
+    .options{
+      .drop__options{
+        left: 10px;
+      }
+    }
+  }
+  .my-message{
+    text-align: right;
+    padding: 10px;
+    .message-wrapper {
+      display: inline-block;
+      position: relative;
+      text-align: -webkit-right;
+    }
+    .message-pad{
+      border-radius: 5px 5px 0px 5px;
+      background: #fff;
+      color: $chat-header;
+      border: 1px solid #cfe1ff;
+    }
+    .options {
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .options{
+    background: $white;
+    position: absolute;
+    bottom: 15px;
+    right: -40px;
+    transition: $transition;
+    .-icon{
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+    }
+    &:hover{
+      .drop__options{
+        display: block;
+      }
+    }
+  }
+}
+
+.message-time {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  color: $chat-sub-header;
+}
+.message-time-start{
+  position: relative;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 20px 0;
+  height: 30px;
+  line-height: 30px;
+  &:before,
+  &:after{
+    content: "";
+    background-color: lighten($border-color, 3);
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    top: 46%;
+    opacity: .6;
+  }
+  &:before{
+    left: 2%;
+  }
+  &:after{
+    right: 2%;
+  }
+}
+
+.drop__options {
+  display: none;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  border: 1px solid lighten($admin-border, 3);
+  border-radius: 3px;
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    li {
+      text-align: center;
+      a {
+        color: $admin-para;
+        display: block;
+        padding: 2px 5px;
+        border-bottom: 1px solid lighten($admin-border, 5);
+        text-decoration: none;
+        transition: $transition;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+      &:last-child{
+        a{
+          border: none;
+        }
+      }
+    }
+  }
+}
+// file style
+.shared__files {
+    display: flex;
+  .file__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+    transition: $transition;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .overlay__morefiles{
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0;
+      text-align: center;
+      line-height: 50px;
+      a{
+        color: $white;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+.service-profile-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2em;
+  height: 240px;
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    span{
+      border-radius: 50%;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    > span{
+      padding: 10px;
+      background: linear-gradient(90deg, rgba(78, 135, 176, 0.25) 0%, rgba(34, 99, 146, 0.2) 100%) ;
+      animation: icon-shadow-pulse 1s infinite;
+      > span{
+        padding: 8px;
+        background: linear-gradient(70deg, rgba(67, 116, 152, 0.25) 0%, rgba(34, 99, 146, 0.2) 100%) ;
+        > span{
+          padding: 6px;
+          background: linear-gradient(60deg, rgba(49, 88, 116, 0.86) 0%, rgba(34, 99, 146, 0.2) 100%) ;
+        }
+      }
+    }
+  }
+}
+.control__buttons {
+  width: 50px;
+  height: 50px;
+  background: $white;
+  display: block;
+  margin-right: 20px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.cancel__call{
+    background: red;
+  }
+  &.fff{
+    background: $white;
+  }
+  &.chatMessage{
+    .-icon{
+      i{
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+.control__buttons{
+  width: 50px;
+  height: 50px;
+  background: #303030;
+  transition: $transition;
+  .-icon{
+    width: 20px;
+    height: 20px;
+  }
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+.woneDropdown{
+  position: relative;
+  .call_dropdown {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: -190px;
+    width: 240px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.10);
+    z-index: 1;
+    > a{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-bottom: 1px solid $admin-border;
+      &:last-child{
+        border: none;
+      }
+      span {
+        line-height: 10px;
+        font-size: 12px;
+        color: $admin-text;
+        b {
+          display: block;
+          margin-bottom: 8px;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+      .-icon {
+        width: 18px;
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+
+}
+
+/**************************************
+  Caret Rotate
+**************************************/
+.expand_caret {
+  transition: .2s ease-in-out;
+}
+*[aria-expanded='false'] > .expand_caret {
+  transform: rotate(-90deg);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+.wone__padd_15{
+  padding: 0 15px !important;
+}
+.dot{
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 5px;
+  &.active{
+    background: #6DD400;
+  }
+}
+
+.white__bg {
+  padding: 1em;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 5px;
+}

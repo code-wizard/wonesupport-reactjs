@@ -1,0 +1,150 @@
+.woen_main-header {
+  height: 60px;
+  background: $white;
+  line-height: 60px;
+  padding: 0 0 0px 50px;
+  nav{
+    height: 100%;
+    line-height: 100%;
+    justify-content: space-between;
+    a{
+      height: 100%;
+      line-height: 2.5;
+      font-weight: 100;
+      font-size: 14px;
+    }
+  }
+}
+.wone_inner-wrapper {
+  display: flex;
+  height: 100%;
+  line-height: 100%;
+}
+// Buttons
+.wone__toggle-menu{
+  position: absolute;
+  left: -25px;
+  cursor: pointer;
+  .-icon{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+// Header Search
+.wone_search-container{
+  min-width: 300px;
+  position: relative;
+  margin-right: 2em;
+  span{
+    position: absolute;
+    z-index: 5;
+    top: 8px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    color: $admin-bg;
+    opacity: .6;
+  }
+  .input-group{
+    width: 100%;
+  }
+  input{
+    background: $white;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $admin-border;
+    border-radius: 0;
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 100;
+    color: $para-color;
+    &:focus{
+      box-shadow: none;
+      background: $white;
+      border-bottom: 1px solid $admin-bg;
+    }
+    &::placeholder{
+      opacity: .7;
+    }
+  }
+}
+// Inner Header
+.wone__inner_header{
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+  padding: 0 25px;
+  background-color: $admin-bg;
+  border-bottom: 1px solid $admin-border;
+  display: flex;
+  justify-content: space-between;
+  .navbar{
+    height: 100%;
+    padding: 0;
+    line-height: 0;
+    .navbar-nav{
+      &,
+      .nav-item{
+        height: 70px;
+      }
+    }
+  }
+}
+.custom-dropdown.dropdown-menu {
+  min-width: 100%;
+  > a {
+    line-height: 20px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 100;
+    right: 0;
+    margin: 0;
+  }
+}
+button.wone-btn.nav-link.dropdown-toggle {
+  text-align: center;
+  line-height: 10px;
+  color: $white;
+  outline: none;
+  height: 35px;
+  margin: 20px 0 0;
+  font-size: 13px;
+  font-weight: 100;
+  border-radius: 5px;
+  min-width: 175px;
+  &:after{
+    position: relative;
+    right: -10px;
+  }
+}
+.page-title{
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 16px;
+}
+.profile-tag {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    height: 100%;
+    line-height: 70px;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+}
+.tag-img{
+  width: 60px;
+  height: 60px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
+.add-user {
+  margin: 0 2em;
+}

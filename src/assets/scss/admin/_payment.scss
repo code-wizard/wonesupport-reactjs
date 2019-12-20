@@ -1,0 +1,167 @@
+.wone__type-table{
+  padding: 1em 0;
+  font-weight: 300;
+  .table{
+    font-size: 13px;
+    tr{
+      td,th{
+        vertical-align: middle;
+      }
+      th{
+        font-weight: 400;
+        border-bottom: 1px solid $admin-border;
+      }
+      th,
+      td{
+        &:last-child{
+          text-align: right
+        }
+      }
+    }
+  }
+  .form-group{
+    margin-bottom: 0;
+    min-width: 60px;
+  }
+}
+.wone__total{
+  background: #F8F8F8;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.10);
+  border-radius: 3px;
+  text-transform: capitalize;
+  td{
+    &:first-child{
+      text-align: center;
+    }
+  }
+}
+.wone__bottom-section {
+  font-size: 13px;
+  .wone-btn.wone_medium{
+    margin: 10px 0;
+  }
+  p {
+    margin: 10px 0;
+  }
+  a{
+    color: $primary-color;
+    font-weight: 400;
+    margin-top: 1em;
+    transition: $transition;
+    display: inline-block;
+  }
+}
+
+.payment_panel{
+  display: none;
+  h6{
+    font-size: 14px;
+    color: $admin-text;
+  }
+}
+.wone__pay-invoice {
+  padding: 1em 0;
+  font-size: 13px;
+  .address {
+    display: block;
+    padding: 1em 0;
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+.update_card{
+  text-decoration: underline;
+}
+.medium_view {
+  width: 55%;
+}
+.coupon_input{
+  display: none;
+  margin: 1em 0;
+}
+.modal.update_card-modal {
+  .wone__tab-content {
+    padding: 0;
+    article {
+      padding: 1em;
+      .form-group {
+        margin: .5rem 0;
+        position: relative;
+        .form-control{
+          max-width: 100%;
+          font-size: 16px;
+          color: $white;
+          background: transparent;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid transparent;
+          height: 40px;
+          &::placeholder{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+.card__master {
+  position: relative;
+  background: $primary-color;
+  padding: 1em;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 1em;
+  // box-shadow: $custom-box-shadow;
+  margin: 10px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 6px 14px 1px rgba(0,0,0,0.08);
+  .master.-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+  }
+}
+.toolTip {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  cursor: pointer;
+  transition: $transition;
+  .info_q {
+    position: absolute;
+    width: 100px;
+    top: -8px;
+    color: $white;
+    i{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: $white;
+      display: block;
+      color: $primary-color;
+      text-align: center;
+      font-style: normal;
+    }
+  }
+  &:hover{
+    .info{
+      display: block;
+    }
+  }
+  .info {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 120px;
+    left: 25px;
+    text-align: center;
+    font-size: 10px;
+    background: #fff;
+    border-radius: 5px;
+    color: $primary-color;
+    padding: 10px 5px;
+  }
+}

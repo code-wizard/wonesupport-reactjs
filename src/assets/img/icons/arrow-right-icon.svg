@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="8px" viewBox="0 0 17 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>arrow-right-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-40" transform="translate(-1312.000000, -484.000000)" fill="#393E41">
+            <g id="Group-38" transform="translate(409.000000, 389.000000)">
+                <g id="Group-28" transform="translate(791.000000, 90.000000)">
+                    <path d="M128.866957,8.17065789 L124.750995,5.13672725 C124.284237,4.86091538 124.029641,5.00942947 123.965992,5.51862062 L123.965992,7.68268303 L112.74257,7.68268303 C112.339461,7.68268303 112,8.0221438 112,8.44646977 L112,8.44646977 C112,8.87079573 112.339461,9.2102565 112.74257,9.2102565 L123.965992,9.2102565 L123.965992,11.5652656 C123.987208,12.2866197 124.26302,12.3927012 124.750995,12.1168893 L128.845741,8.70106535 C129.036687,8.53133496 129.057904,8.36160457 128.866957,8.17065789 Z" id="arrow-right-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

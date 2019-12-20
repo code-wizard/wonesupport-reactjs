@@ -1,0 +1,28 @@
+/*
+    Run:
+        sass assets/scss:assets/css
+        ** add new css to template files with _file.scss
+*/
+
+@import './variables.scss';
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './mixins.scss';
+@import './layout/icon';
+@import './layout/buttons';
+@import './layout/utility';
+@import './layout/header';
+@import './layout/inputs';
+@import './layout/modal';
+@import './layout/carousel';
+@import './layout/main';
+@import './layout/pages/main-landing';
+@import './layout/pages/profile-landing';
+@import './layout/pages/landing_lp';
+@import './layout/pages/pricing';
+@import './layout/pages/customer-page';
+@import './layout/pages/regist-page';
+@import './layout/pages/search-result';
+@import './layout/pages/password';
+@import './layout/_footer';
+@import './layout/media';

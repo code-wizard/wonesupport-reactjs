@@ -1,0 +1,33 @@
+.wone-users-btn.add-users {
+    height: 40px;
+    line-height: 30px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 110px;
+    font-weight: 100;
+    color: #FFFFFF;
+}
+.wone-users-btn {
+    background-color: #3976be;
+    border-color: #3976be;
+    transition: 0.2s ease-in-out;
+}
+.add-users {
+    span {
+        margin-right: 5px;
+    }
+}
+.fa {
+    font-weight: 900;
+}
+.link-add {
+    font-weight: 100;
+    color: #3976be;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px 0;
+    &:hover {
+        color: #3976be;
+    }
+}

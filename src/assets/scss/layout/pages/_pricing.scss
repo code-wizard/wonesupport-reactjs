@@ -1,0 +1,246 @@
+%anchor{
+    a{
+    color: $primary-color;
+    font-size: 12px;
+    transition: $transition;
+    padding-left: 1.3em;
+    &:hover{
+      text-decoration: none;
+      opacity: .8;
+    }
+    &.trial-link{
+      color: $input-color;
+      text-align: center;
+      display: block;
+      margin: 10px;
+      padding: 0;
+    }
+  }
+}
+.pricing__card {
+  background: $white;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0 6px 14px 1px rgba(0,0,0,0.08);
+  border-radius: 5px;
+  margin: 10px 30px 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: $transition;
+  &:hover{
+    transform: scale(1.02);
+  }
+  .pricing__body{
+    p{
+      font-size: 13px;
+    }
+  }
+  ul {
+    padding-left: 1em;
+    li{
+      font-weight: 100;
+      font-size: 13px;
+    }
+  }
+  @extend %anchor;
+}
+.pricing__header {
+  text-align: center;
+  color: $secondary-color;
+  h4{
+    margin: 10px;
+    font-weight: 700;
+    font-size: 1.7em;
+  }
+  h6{
+    margin-bottom: 0;
+  }
+  h6,p{
+    font-size: 12px;
+  }
+}
+// Carousel
+.pricing-carousel{
+  .owl-nav{
+    text-align: center;
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 2;
+    .owl-prev,
+    .owl-next{
+      span{
+        font-size: 45px;
+        margin: 0 65px;
+        position: relative;
+        color: #D2D2D2;
+      }
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    .owl-dot{
+      span {
+        background: #EDEDED;
+        position: relative;
+        top: 0;
+        width: 6px;
+        height: 6px;
+        display: block;
+        border-radius: 100%;
+        margin: 0 5px;
+      }
+      &.active{
+        span{
+          background: #616161;
+        }
+      }
+    }
+  }
+
+}
+
+.price__learnmore{
+  background: #F9FCFF;
+  padding: 2em 0;
+}
+.price__header{
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  opacity: .8;
+  padding: 2em 0;
+  p{
+    font-size: 12px;
+  }
+}
+
+.price__card {
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.03);
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  .-icon{
+    margin-left: 0;
+  }
+  h5{
+    margin-top: 10px;
+  }
+  a,p{
+    font-size: 14px;
+  }
+  p{
+    font-weight: 300;
+    min-height: 50px;
+  }
+  @extend %anchor;
+  a{
+    padding: 0;
+  }
+  button.wone-btn.white-btn{
+    width: 100%;
+    height: 40px;
+    margin: 15px 0 10px;
+    color: $primary-color;
+    border-radius: 3px;
+    &:hover{
+      background: $white;
+      opacity: .8;
+    }
+  }
+}
+
+/****************************
+  Pricing List Page
+*****************************/
+.pricing-table-wrapper{
+  background: #FFFFFF;
+  border: 1px solid #EDEEF5;
+  box-shadow: 0 6px 14px 1px rgba(141,183,224,0.10);
+  border-radius: 10px;
+  width: 100%;
+  min-height: 40vh;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4em;
+  .-icon {
+    width: 15px;
+    height: 15px;
+  }
+  table{
+    margin-bottom: 0;
+    tr{
+      &:first-child{
+        background-image: linear-gradient(180deg, #E4EEF8 0%, #FFFFFF 95%);
+        td{
+          padding-top: 2em;
+          border-top: none;
+          border-left: 1px solid $white;
+          border-right: 1px solid $white;
+        }
+      }
+    }
+    tr{
+      font-size: 13px;
+      font-weight: 200;
+      td{
+        &:first-child{
+          text-align: left;
+          border-left: none;
+        }
+        &:last-child{
+          border-right: none;
+        }
+        text-align: center;
+        padding: 1rem;
+        // background: #FFFFFF;
+        border: 1px solid #EDEEF5;
+      }
+      &:last-child{
+        td{
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  .wone-btn.pricing-btn {
+    border-radius: 3px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: 100;
+    margin-top: 0;
+    padding: 0 15px;
+  }
+}
+.price___tag{
+  .pricing__header{
+    color: #2A476D;
+    h5{
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin-bottom: 0;
+      small{
+        font-size: 60%;
+      }
+    }
+  }
+  td{
+    &:last-child{
+      h5{
+        font-weight: 400;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.table-title{
+  background: #FAFAFA;
+}

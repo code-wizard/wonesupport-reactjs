@@ -1,0 +1,493 @@
+body{
+  display: flex;
+}
+.wone__main-wrapper{
+  background-color: $white;
+  width: 95%;
+}
+.wone__content-wrapper{
+  display: flex;
+}
+.wone__content-view{
+  background-color: $white;
+  width: 100%;
+}
+.wone__inner-main{
+  // width: 97%;
+  width: 100%;
+  height: 82vh;
+  padding: 1em;
+  overflow: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  &.gray__bg{
+    background-color: #EFF2F7;
+  }
+}
+// Tabs
+.wone__content-nav-tab{
+  border-bottom: 1px solid $admin-border;
+  .nav-item{
+    height: 45px;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    .nav-link{
+      min-width: 70px;
+      margin-right: 50px;
+      color: $admin-text;
+      border-bottom: 1px solid transparent;
+      transition: $transition;
+      &.active{
+        border-bottom: 1px solid $primary;
+      }
+    }
+  }
+}
+.wone__tab-content{
+  padding: 20px;
+  &.no-tabs{
+    padding: 0 10px 0;
+  }
+  article{
+    padding: 0 0 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $admin-border;
+    &:last-child{
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    label,
+    h5{
+      font-size: 14px;
+      font-weight: 100;
+    }
+    p {
+      font-size: 13px;
+      margin-bottom: 5px;
+      font-weight: 100;
+      a{
+        color: $primary-color;
+      }
+    }
+    .form-group{
+      > *{
+        outline: none;
+        font-size: 14px;
+        font-weight: 100;
+      }
+      label{
+        padding-right: 0;
+      }
+      .form-control{
+        max-width: 300px;
+        transition: $transition;
+        background-color: $white;
+        &:focus{
+          box-shadow: none;
+          border: 1px solid $admin-input;
+          ::-moz-placeholder,
+          ::placeholder{
+            opacity: .6;
+          }
+        }
+        &.color-input{
+          max-width: 70px;
+          padding: 1px 2px;
+        }
+        &.select-type{
+          max-width: 330px;
+        }
+      }
+    }
+  }
+}
+.form_wrapper{
+  &.form-group{
+    > *{
+      outline: none;
+      font-size: 14px;
+      font-weight: 100;
+    }
+    label{
+      padding-right: 0;
+    }
+    .form-control{
+      max-width: 300px;
+      transition: $transition;
+      background-color: $white;
+      &:focus{
+        box-shadow: none;
+        border: 1px solid $admin-input;
+        ::-moz-placeholder,
+        ::placeholder{
+          opacity: .6;
+        }
+      }
+      &.color-input{
+        max-width: 70px;
+        padding: 1px 2px;
+      }
+      &.select-type{
+        max-width: 330px;
+      }
+    }
+  }
+}
+.bb{
+  border-bottom: 1px solid $admin-border;
+}
+.wone__bb-style{
+  margin-bottom: 1em;
+  padding: 0 0 10px;
+  border-bottom: 1px solid $admin-border;
+}
+.agent_listing{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  li{
+    font-size: 12px;
+    font-weight: 100;
+    height: 35px;
+    min-width: 165px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    background: #DBDBDB;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: $transition;
+    span{
+      margin-right: 10px;
+    }
+    &:hover{
+      background: lighten(#DBDBDB, 10);
+      transform: scale(1.1);
+    }
+  }
+}
+.search__counter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.wone__table{
+  .form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .form-check-input{
+    position: relative;
+    margin: 0;
+  }
+  &.no-bg{
+    tbody{
+      tr{
+        background-color: $white;
+      }
+    }
+  }
+  tr{
+    th, td{
+      &:first-child{
+        width: 50px;
+      }
+      &:last-child{
+        text-align: right;
+        padding-right: 0;
+        span{
+          margin: 0 20px;
+          color: green;
+        }
+      }
+    }
+  }
+  thead th, th, td{
+    border: none;
+    font-size: 13px;
+    position: relative;
+  }
+  tbody{
+    tr{
+      border-bottom: 1px dashed $admin-border;
+      font-weight: 100;
+      background-color: #FCFBFB;
+      transition: $transition;
+      &:first-child{
+        border-top: 1px dashed $admin-border;
+      }
+      &:hover{
+        background-color: lighten(#FCFBFB, 4)
+      }
+    }
+  }
+}
+.status {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #E9EBED;
+  border-radius: 50%;
+  right: 0;
+  margin: 5px 10px;
+  opacity: .6;
+  &.online{
+    background: green;
+  }
+}
+.wone__caption-content {
+  width: 100%;
+  height: 265px;
+  border-radius: 10px;
+  background: #fafbfd;
+  border: 1px solid $admin-border;
+  padding: 2em;
+  margin: 10px 0 25px;
+  table{
+    td {
+      font-size: 15px;
+      font-weight: 100;
+      min-width: 200px;
+      line-height: 25px;
+    }
+  }
+}
+.wone_admin-tag {
+  display: flex;
+  width: 100%;
+  min-height: 65px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  border: 1px solid $admin-border;
+  padding: 15px 15px 10px;
+  margin: 1em 0;
+  .-icon{
+    margin: 0;
+  }
+  .content{
+    padding-left: 15px;
+    h6{
+      margin-bottom: 0;
+    }
+    p{
+      margin-top: 0;
+    }
+  }
+}
+.wone__inner_header{
+  a{
+    font-weight: 100;
+    color: $primary-color;
+    height: 40px;
+    line-height: 40px;
+    margin: 15px 0;
+  }
+  button{
+    span{
+      margin-right: 5px;
+    }
+  }
+}
+.links-accordions{
+  .-icon {
+    margin: 0px;
+    float: right;
+    width: 15px;
+    height: 25px;
+  }
+  a{
+    text-decoration: none;
+    > div{
+      transition: $transition;
+    }
+    &.active,
+    &:hover{
+      > div{
+        border-left: 5px solid $primary-color;
+      }
+    }
+  }
+  li {
+    margin: 5px 0;
+    > a{
+      color: #212529;
+      font-weight: 100;
+    }
+  }
+  .card-header {
+    padding: 0.75rem 25px 0;
+    background-color: transparent;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  .wrap-linker{
+    padding: 0 15px;
+  }
+  .wone_admin-tag {
+    display: block;
+    width: 90%;
+    min-height: 60px;
+    padding: 5px 10px;
+    margin: 1em auto;
+    height: 60px;
+    border-radius: 5px;
+    background: #fafafa;
+    border: 1px solid $admin-border;
+    .tag-images{
+      display: flex;
+      align-items: center;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+      h6{
+        padding-left: 10px;
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+    p {
+      font-size: 11px;
+      font-weight: 100;
+      margin: 5px 0;
+      width: 90%;
+      @extend %ellipsis;
+    }
+  }
+}
+.admin-call-panel{
+  width: 322px;
+  height: 411px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid $admin-border;
+  margin-right: 20px;
+  padding: 10px;
+  font-weight: 100;
+  .call-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed $admin-border;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+    h6{
+      margin-bottom: 0;
+      font-weight: 100;
+    }
+  }
+}
+.view__display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.call-sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+  span{
+    text-align: left;
+    width: 100%;
+    padding: 0 10px;
+    &:first-child,
+    &:last-child{
+      width: 30px;
+      margin: 0;
+      padding: 5px;
+    }
+  }
+}
+
+.call-body {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAFBFB;
+  .-icon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+}
+.call-body-online{
+  text-align: center;
+  .call-title {
+    font-size: 18px;
+    height: 40px;
+    line-height: 35px;
+    font-weight: 300;
+  }
+  .time-summary {
+    font-size: 14px;
+  }
+  .wone_loc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    height: 117px;
+    background: #f8f9f9;
+    h6 {
+        color: #626262;
+    }
+    span {
+      font-size: 13px;
+      color: #C6CDD3
+    }
+  }
+  .name-tag {
+    display: flex;
+    text-align: center;
+    height: 40px;
+    background: #fff8ed;
+    padding: 0 10px;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px 0;
+    .-icon {
+      margin: 0 20px 0 0;
+      padding: 5px;
+    }
+  }
+}
+.call-btn-pad {
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  button{
+    height: 40px;
+    width: 140px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 5px;
+    color: $white;
+    &.cancel-call{
+      background-color: #CC3340;
+    }
+    &.accept-call{
+      background-color: #038153;
+    }
+  }
+}
+

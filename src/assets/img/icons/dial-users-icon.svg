@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>dial-users-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-50" transform="translate(-669.000000, -646.000000)">
+            <g id="Group-55" transform="translate(533.000000, 187.000000)">
+                <g id="Group-54">
+                    <g id="Group-53" transform="translate(44.000000, 40.000000)">
+                        <g id="Group-52" transform="translate(0.000000, 419.000000)">
+                            <g id="Group-51" transform="translate(83.000000, 0.000000)">
+                                <g id="dial-users-icon" transform="translate(9.000000, 0.000000)">
+                                    <g id="Group">
+                                        <path d="M9.5,0 C14.7467051,0 19,4.25329489 19,9.5 C19,14.7467051 14.7467051,19 9.5,19 C4.25329489,19 0,14.7467051 0,9.5 C0,4.25329489 4.25329489,0 9.5,0 Z M9.5,0.76 C4.6730313,0.76 0.76,4.6730313 0.76,9.5 C0.76,14.3269687 4.6730313,18.24 9.5,18.24 C14.3269687,18.24 18.24,14.3269687 18.24,9.5 C18.24,4.6730313 14.3269687,0.76 9.5,0.76 Z" id="Combined-Shape" fill="#B1B1B1" fill-rule="nonzero"></path>
+                                        <path d="M15.7801614,16.34 C15.0966142,13.5056824 12.5442114,11.4 9.5,11.4 C6.45578865,11.4 3.90338576,13.5056824 3.21983862,16.34 L4.00490843,16.34 C4.67009474,13.9298979 6.87835648,12.16 9.5,12.16 C12.1216435,12.16 14.3299053,13.9298979 14.9950916,16.34 L15.7801614,16.34 Z" id="Path" fill="#B1B1B1"></path>
+                                        <path d="M9.5,10.26 C11.1789456,10.26 12.54,8.89894564 12.54,7.22 C12.54,5.54105436 11.1789456,4.18 9.5,4.18 C7.82105436,4.18 6.46,5.54105436 6.46,7.22 C6.46,8.89894564 7.82105436,10.26 9.5,10.26 Z" id="Shape" stroke="#B1B1B1" fill-rule="nonzero"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
