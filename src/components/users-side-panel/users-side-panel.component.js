@@ -36,27 +36,89 @@ class UsersSidePanel extends Component {
                             <Accordion.Collapse eventKey="0">
                                 <div className="wrap-linker">
                                     <div className="wrap-full-size">
-                                      <Link to="#">
-                                        <div className="wone_admin-tag"></div>
-                                      </Link> 
+                                        <Link to="#">
+                                            <div className="wone_admin-tag">
+                                                <div className="tag-images">
+                                                    <img src={require("../../assets/img/icons/live-chats-icon.svg")} alt="live chat" />
+                                                    <h6>Live Chat</h6>
+                                                </div>
+                                                <p>Learn more about live chat</p>
+                                            </div>
+                                        </Link> 
                                     </div>
-                                    <div className="wrap-full-size"></div>
-                                    <div className="wrap-full-size"></div>
-                                    <div className="wrap-full-size"></div>
-                                    <div className="wrap-full-size"></div>
+                                    <div className="wrap-full-size">
+                                        <Link to="#">
+                                            <div className="wone_admin-tag">
+                                                <div className="tag-images">
+                                                    <img src={require("../../assets/img/icons/voice-calls.svg")} alt="voice chat" />
+                                                    <h6>Voice Call</h6>
+                                                </div>
+                                                <p>Learn more about Voice call</p>
+                                            </div>
+                                        </Link>  
+                                    </div>
+                                    <div className="wrap-full-size">
+                                        <Link to="#">
+                                            <div className="wone_admin-tag">
+                                                <div className="tag-images">
+                                                    <img src={require("../../assets/img/icons/live-chats-icon.svg")} alt="faqs" />
+                                                    <h6>FAQs</h6>
+                                                </div>
+                                                <p>Learn more about FAQs</p>
+                                            </div>
+                                        </Link> 
+                                    </div>
+                                    <div className="wrap-full-size">
+                                        <Link to="#">
+                                            <div className="wone_admin-tag">
+                                                <div className="tag-images">
+                                                    <img src={require("../../assets/img/icons/video-calls.svg")} alt="video chat" />
+                                                    <h6>Video Call</h6>
+                                                </div>
+                                                <p>Learn more about Video call</p>
+                                            </div>
+                                        </Link> 
+                                    </div>
+                                    <div className="wrap-full-size">
+                                        <Link to="#">
+                                            <div className="wone_admin-tag">
+                                                <div className="tag-images">
+                                                    <img src={require("../../assets/img/icons/dis-forums.svg")} alt="discussion forum" />
+                                                    <h6>Discussion Forum</h6>
+                                                </div>
+                                                <p>Learn more about Discussion Forum</p>
+                                            </div>
+                                        </Link> 
+                                    </div>
+                                    <div className="wrap-full-size">
+                                        <Link to="#">
+                                            <div className="wone_admin-tag">
+                                                <div className="tag-images">
+                                                    <img src={require("../../assets/img/icons/wone-supports.svg")} alt="support" />
+                                                    <h6>Support</h6>
+                                                </div>
+                                                <p>Learn more about live chat</p>
+                                            </div>
+                                        </Link> 
+                                    </div>
                                 </div>
                             </Accordion.Collapse>
-                            <div>
-                                <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                                    Click me!
+                            <div className="card-header">
+                                <Accordion.Toggle eventKey="1">
+                                    People
                                 </Accordion.Toggle>
                             </div>
                             <Accordion.Collapse eventKey="1">
-                                <div>Hello! I'm another body</div>
+                                <div></div>
                             </Accordion.Collapse>
                         </Accordion>
                     </div>
                   </div>
+                  <ul className="links-accordions">
+                    <li>
+                        <Link to="#">Conversations</Link>
+                    </li>
+                  </ul>
                </div>
            </WoneSidePanel> 
         );

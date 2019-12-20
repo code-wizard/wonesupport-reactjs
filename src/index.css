@@ -64,6 +64,12 @@ ol, ul, dl {
   border-bottom: 1px solid #DEDEDE;
 }
 
+.links-accordions .wone_admin-tag p, .message-pad.file-style p, .chat-messages .other-message .message-wrapper .file-style.message-pad p, .admin__chat-board .other-message .message-wrapper .file-style.message-pad p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* .main-spinner-wrapper {
   display: flex;
   flex-direction: column;
