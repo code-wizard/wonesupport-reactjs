@@ -52,16 +52,12 @@ ol, ul, dl {
     left: 255px;
   }
 }
-
-.wone-inner-header {
-  height: 70px;
-  width: 100%;
-  line-height: 70px;
-  padding: 0 25px;
-  background: #EFF2F7;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #DEDEDE;
+button:focus {
+  outline: none ;
+}
+.wone-content-view {
+  background-color: #FFFFFF;
+  flex: 2;
 }
 
 .links-accordions .wone_admin-tag p, .message-pad.file-style p, .chat-messages .other-message .message-wrapper .file-style.message-pad p, .admin__chat-board .other-message .message-wrapper .file-style.message-pad p {
@@ -69,6 +65,7 @@ ol, ul, dl {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 
 /* .main-spinner-wrapper {
   display: flex;

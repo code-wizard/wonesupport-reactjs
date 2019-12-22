@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { WoneSidePanel, WoneInnerHeader } from '../common';
-import { Accordion, Button } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -117,6 +117,9 @@ class UsersSidePanel extends Component {
                   <ul className="links-accordions">
                     <li>
                         <Link to="#">Conversations</Link>
+                    </li>
+                    <li className="links-accordions">
+                        <Link to="#">Accounts</Link>
                     </li>
                   </ul>
                </div>
