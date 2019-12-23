@@ -27,14 +27,10 @@ class Header extends Component {
         toggleDropdown: !this.state.toggleDropdown
       })
     }
-
-    capitalize = (s) => {
-      return s[0].toUpperCase() + s.slice(1);
-    }
     
     render() {
-      const { toggleDropdown } = this.state
-      const title = this.props.location.pathname.replace(/\//g, "")
+      const { toggleDropdown } = this.state;
+      console.log(this.props)
       return(
         <header className="wone-main-header">
           <nav className="navbar navbar-expand-lg">
@@ -43,9 +39,9 @@ class Header extends Component {
                 <i className="menu-icon"></i>
               </span>
             </span>
-            <Link className="navbar-band" to="/home">
+            <Link className="navbar-band" to="/">
               <img src={Logo} alt="logo" />
-              <span>{this.capitalize(title)}</span>
+              <span>{'Home'}</span>
             </Link>
             <div className="wone-inner-wrapper">
               <div className="search-container">

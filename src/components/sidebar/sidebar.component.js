@@ -1,20 +1,25 @@
 import React, {Component} from 'react';
 import './sidebar.styles.scss'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import Logo from '../../assets/img/wone-logo.svg'
 
 class SideBar extends Component {
+
+    isPathActive = (path) => {
+        return this.props.location.pathname.startsWith(path);
+    }
+
     render() {
        return(
         <div className="wone-sidebar">
            <div className="wone-logo">
-              <Link to="/home">
+              <Link to="/dashboard">
                   <img src={Logo} alt="wone-support-logo" />
               </Link>
            </div> 
            <ul>
             <li>
-              <Link to="/home">
+              <Link className={this.isPathActive('/dashboard') ? 'active': ''} to="/dashboard">
                   <span className="-icon">
                       <i className="home-icon"></i>
                   </span>
@@ -24,7 +29,7 @@ class SideBar extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/all Users">
+              <Link className={this.isPathActive('/all-users') ? 'active': ''} to="/all-users">
                   <span className="-icon">
                       <i className="users-icon"></i>
                   </span>
@@ -63,4 +68,4 @@ class SideBar extends Component {
     }
 }
 
-export default SideBar;
+export default withRouter(SideBar);

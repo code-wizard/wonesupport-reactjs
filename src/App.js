@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense, lazy } from 'react';
 import Dashboard from './pages/dashboard/dashboard.component';
 import Users from './pages/users/users.component'
 import Header from './components/header/header.component';
@@ -13,8 +13,8 @@ class App extends Component {
         <Header />
         <SidBar />
         <Switch>
-          <Route path="/home" component={Dashboard} />
-          <Route path="/all users" component={Users} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/all-users" component={Users} />
         </Switch>
       </div>
     );

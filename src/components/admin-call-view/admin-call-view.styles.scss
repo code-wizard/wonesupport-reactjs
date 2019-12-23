@@ -1,0 +1,172 @@
+.admin-call-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .admin-call-panel {
+        width: 322px;
+        height: 411px;
+        border-radius: 5px;
+        background: #fff;
+        border: 1px solid #DEDEDE;
+        margin-right: 20px;
+        padding: 10px;
+        font-weight: 100;
+        .call-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed #DEDEDE;
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+            h6 {
+                margin-bottom: 0;
+                font-weight: 100;
+                font-size: 1rem;
+                line-height: 1.2;
+            }
+            .call-status {
+                width: 110px;
+                display: flex;
+                align-items: center;
+                background: #F8F9F9;
+                padding: 0 10px;
+                border-radius: 3px;
+                .status-call {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: #ced4da;
+                    opacity: 1;
+                }
+                .online {
+                    background: green;
+                }
+                .form-control {
+                    display: block;
+                    padding: 0.375rem 0.75rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #525252;
+                    border-radius: 0.25rem;
+                    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                }
+                .form-control {
+                    width: 95px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center !important;
+                    background: transparent;
+                    border: none;
+                }
+                .form-control:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .call-sub-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 13px;
+            span {
+                text-align: left;
+                width: 100%;
+                padding: 0 10px;
+            }
+            span {
+              text-align: left;
+              &:first-child {
+                  width: 30px;
+                  margin: 0;
+                  padding: 5px;
+              }
+            }
+        }
+        .past-calls-icon {
+            background-image: url(../../assets/img/icons/past-calls-icon.svg);
+        }
+        .dialer-icon {
+            background-image: url(../../assets/img/icons/dialer-icon.svg);
+        }
+        .call-cancel-icon {
+            background-image: url(../../assets/img/icons/call-cancel-icon.svg);
+        }
+        .call-body {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #FAFBFB;
+            .-icon {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .call-body-online {
+        text-align: center;
+        .call-title {
+            font-size: 18px;
+            height: 40px;
+            line-height: 35px;
+            font-weight: 300;
+        }
+        .time-summary {
+            font-size: 14px;
+        }
+        .wone_loc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            height: 117px;
+            background: #f8f9f9;
+            h6 {
+                color: #626262;
+            }
+            span {
+                font-size: 13px;
+                color: #C6CDD3;
+            }
+        }
+        .name-tag {
+            display: flex;
+            text-align: center;
+            height: 40px;
+            background: #fff8ed;
+            padding: 0 10px;
+            align-items: center;
+            font-size: 14px;
+            margin: 10px 0;
+            .-icon {
+                margin: 0 20px 0 0;
+                padding: 5px;
+            }
+        }
+    }
+}
+.call-btn-pad {
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    .cancel-call {
+        background-color: #CC3340;
+    }
+    .accept-call {
+        background-color: #038153;
+    }
+    button {
+        height: 40px;
+        width: 140px;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        border-radius: 5px;
+        color: #FFFFFF;
+    }
+}
+
