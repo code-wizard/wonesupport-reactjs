@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class Spinner extends Component {
   render() {
     return (
-      <div>
-        <div className="spinner-wrapper">
+      <div className="main-spinner-wrapper">
+        <div>
           <div className="donut"></div>
         </div>
       </div>

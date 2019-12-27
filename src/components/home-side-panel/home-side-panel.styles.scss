@@ -4,8 +4,8 @@
     font-weight: 100;
 }
 .wone-links {
+    height: calc(100% - 130px);
     overflow: scroll;
-    height: 100vh;
     ul {
         list-style: none;
         padding: 0 25px;
@@ -21,7 +21,7 @@
         margin-bottom: 2px;
         transition: 0.2s ease-in-out;
     }
-    ul a:active, ul a:hover {
+    ul a:active, ul a:hover, .active {
         background-color: #EDEFF1;
         padding-left: 10px;
         border-left: 5px solid;

@@ -7,6 +7,7 @@
 * {
   padding: 0;
   margin: 0;
+  overflow-y: hidden;
 }
 body, html {
   overflow-x: hidden;
@@ -20,6 +21,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #FFFFFF;
+  overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
@@ -59,6 +61,12 @@ ol, ul, dl {
 button:focus {
   outline: none ;
 }
+.btn:focus, .btn.focus {
+  outline: 0;
+}
+button:focus, .btn:focus, .btn-primary.focus, .btn-primary:focus, .wone-btn:focus, .wone_medium:focus {
+  box-shadow: none;
+}
 .wone-content-view {
   background-color: #FFFFFF;
   flex: 2;
@@ -68,10 +76,9 @@ button:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} 
 
-
-/* .main-spinner-wrapper {
+.main-spinner-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,4 +99,4 @@ button:focus {
   to {
     transform: rotate(360deg);
   }
-} */
+} 

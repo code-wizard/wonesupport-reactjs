@@ -1,0 +1,150 @@
+.wone-tab-content {
+    padding-bottom: 0;
+    article {
+        label {
+            font-size: 14px;
+            font-weight: 100;
+        }
+        .form-group {
+            .form-control{
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid #ced4da;
+                }
+            }
+        }
+        
+    }
+    .border-bottom {
+        padding: 0 0 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #DEDEDE;
+        .form-group .form-control.select-type {
+            max-width: 330px;
+        }
+        .agent-btn.wone_medium {
+            font-weight: 100;
+            font-size: 12px;
+        }
+        .form-group > * {
+            outline: none;
+            font-size: 14px;
+            font-weight: 100;
+            &:focus {
+                box-shadow: none;
+                border: 1px solid #ced4da;
+            }
+        }
+    }
+    .flex-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .agent-btn {
+            margin-right: 0;
+        }
+    }
+    .form-group {
+        .form-control {
+            max-width: 300px;
+            transition: 0.2s ease-in-out;
+            background-color: #FFFFFF;
+        }
+    }
+}
+.agent-btn {
+    background-color: #3976be;
+    border-color: #3976be;
+    transition: 0.2s ease-in-out;
+}
+.agent-btn.tab-btn {
+    min-width: 200px;
+    font-size: 14px;
+    color: #fff;
+    height: 50px;
+}
+.agent-btn.white-btn {
+    margin-left: 15px;
+    width: 100px;
+    font-size: 12px;
+    background: #FFFFFF;
+    &:hover {
+        background-color: #f7f7f7;
+    }
+}
+
+.agent-btn.wone_medium {
+    height: 35px;
+    margin-bottom: 0 !important;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.agent-btn.wone_medium:hover {
+    opacity: 0.8;
+}
+.agent-btn:hover {
+    background-color: #5c90ce;
+    border-color: #5c90ce;
+}
+.search__counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.wone__table {
+    .form-check-input {
+        position: relative;
+        margin: 0;
+    }
+    tbody {
+        tr {
+            &:first-child {
+                border-top: 1px dashed #DEDEDE;
+            }
+        }
+    }
+}
+.wone__table tr th:first-child, .wone__table tr td:first-child {
+    width: 50px;
+}
+.wone__table thead th, .wone__table th, .wone__table td {
+    border: none;
+    font-size: 13px;
+    position: relative;
+}
+.table td, .table th {
+    border: none;
+    vertical-align: bottom;
+}
+.wone__table.no-bg tbody tr {
+    background-color: #fff;
+}
+.wone__table tbody tr {
+    border-bottom: 1px dashed #DEDEDE;
+    font-weight: 100;
+    transition: 0.2s ease-in-out;
+}
+
+.status {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #E9EBED;
+    border-radius: 50%;
+    right: 0;
+    margin: 5px 10px;
+    opacity: 0.6;
+}
+.status.online {
+    background: green;
+}
+.wone__table tr th:last-child span, .wone__table tr td:last-child span {
+    margin: 0 20px;
+    color: green;
+}
+.btn-pad {
+    display: flex;
+}
