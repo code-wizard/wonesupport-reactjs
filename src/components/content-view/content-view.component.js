@@ -10,6 +10,8 @@ import VideoCall from '../live-chat/video-call.component';
 import Faqs from '../live-chat/faqs.component';
 import DiscussionForum from '../live-chat/discussion-forum.component';
 import Agents from '../agents/agents.component';
+import Account from '../agents/account.component';
+import Department from '../agents/department.component';
 
 
 
@@ -33,6 +35,8 @@ class ContentView extends Component {
                         <Route path={`${match.path}/voice-call`} component={VoiceCall} />
                         <Route path={`${match.path}/video-call`} component={VideoCall} />
                         <Route path={`${match.path}/discussion-forum`} component={DiscussionForum} />
+                        <Route path={`${match.path}/account`} component={Account} />
+                        <Route path={`${match.path}/department`} component={Department} />
                     </Switch>
             </WoneContView>
         )
