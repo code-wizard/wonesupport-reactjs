@@ -7,7 +7,9 @@
 * {
   padding: 0;
   margin: 0;
-  /* overflow-y: hidden; */
+}
+html, body, #root {
+  overflow-y: hidden;
 }
 body, html {
   overflow-x: hidden;
@@ -50,13 +52,11 @@ ol, ul, dl {
   outline-offset: -2px;
   -webkit-appearance: none;
 }
-@media (min-width: 992px) {
-  .sidebar-icon-only .home{
+.sidebar-icon-only .home{
     margin-left: 255px;
-  } 
-  .sidebar-icon-only .wone-main-header  {
+} 
+.sidebar-icon-only .wone-main-header  {
     left: 255px;
-  }
 }
 button:focus {
   outline: none ;
@@ -100,3 +100,7 @@ button:focus, .btn:focus, .btn-primary.focus, .btn-primary:focus, .wone-btn:focu
     transform: rotate(360deg);
   }
 } 
+
+.overflow-hidden {
+  overflow-y: hidden;
+}

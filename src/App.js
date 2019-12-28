@@ -16,7 +16,7 @@ class App extends Component {
     const { match } = this.props
     return (
       <Suspense fallback={<Spinner />}>
-        <div className="app-container">
+        <div className="app-container" style={{overflowY: 'hidden'}}>
           <Header />
           <SidBar />
           <Switch>

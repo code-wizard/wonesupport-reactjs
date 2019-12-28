@@ -4,7 +4,6 @@ import { Link, withRouter } from 'react-router-dom';
 import './header.styles.scss';
 import SearchInput from '../search-input/search-input.component';
 import Profile from '../../assets/img/users/user3.jpg';
-import Logo from '../../assets/img/wonesupport-logo.svg'
 import DropdownMenu from '../dropdown-menu/dropdown-menu.component';
 
 
@@ -40,7 +39,6 @@ class Header extends Component {
               </span>
             </span>
             <Link className="navbar-band" to="/">
-              <img src={Logo} alt="logo" />
               <span>{'Home'}</span>
             </Link>
             <div className="wone-inner-wrapper">
@@ -79,9 +77,6 @@ class Header extends Component {
                 </ul>
               </div>
             </div>
-            {/* <button className="navbar-toggler">
-              <span className="navbar-toggler-icon"></span>
-            </button> */}
           </nav>
         </header>
       )
