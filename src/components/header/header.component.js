@@ -29,7 +29,6 @@ class Header extends Component {
     
     render() {
       const { toggleDropdown } = this.state;
-      console.log(this.props)
       return(
         <header className="wone-main-header">
           <nav className="navbar navbar-expand-lg">

@@ -4,6 +4,9 @@ import { Link, withRouter } from 'react-router-dom'
 import Logo from '../../assets/img/wone-logo.svg'
 
 class SideBar extends Component {
+    componentDidMount() {
+        console.log(this.props);
+    }
 
     isPathActive = (path) => {
         return this.props.location.pathname.startsWith(path);

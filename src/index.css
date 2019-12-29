@@ -104,3 +104,11 @@ button:focus, .btn:focus, .btn-primary.focus, .btn-primary:focus, .wone-btn:focu
 .overflow-hidden {
   overflow-y: hidden;
 }
+
+.nav-pills .nav-link {
+  border-radius:0 !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: transparent !important;
+  border-bottom: 1px solid #007bff !important;
+}

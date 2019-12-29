@@ -261,3 +261,61 @@ article.add-border-line {
 .agent_listing li span {
     margin-right: 10px;
 }
+.wone__content-nav-tab {
+    border-bottom: 1px solid #DEDEDE;
+    .nav-item {
+        height: 45px;
+        padding: 0;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        .nav-link {
+            min-width: 70px;
+            margin-right: 50px;
+            color: #39434A;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s ease-in-out;
+            outline: none !important;
+        }
+    }
+}
+.wone__tabs-contents {
+    padding: 20px;  
+    article {
+        padding: 0 0 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #DEDEDE;
+        &:last-child {
+            border-bottom: none;
+        }
+        .form-group {
+            .form-control.color-input {
+                max-width: 70px;
+                padding: 1px 2px;
+            }
+        }
+    }
+}
+.m-b-20 {
+    margin-bottom: 20px;
+}
+.wone__tabs-contents .form-group .form-control.select-type {
+    max-width: 330px;
+}
+.-icon.link-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 1px;
+}
+.-icon i {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.manage-share-icon {
+    background-image: url(../../assets/img/icons/manage-share-icon.svg);
+}

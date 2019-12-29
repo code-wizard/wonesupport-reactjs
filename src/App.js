@@ -4,18 +4,20 @@ import './App.scss';
 
 import Header from './components/header/header.component';
 import SidBar from './components/sidebar/sidebar.component';
-import Spinner from './components/spinner/spinner.component';
+import Dashboard from './pages/dashboard/dashboard.component';
+import Users from './pages/users/users.component';
+// import Spinner from './components/spinner/spinner.component';
 
 
-const Dashboard = lazy(() => import('./pages/dashboard/dashboard.component'));
-const Users = lazy(() => import('./pages/users/users.component'));
+// const Dashboard = lazy(() => import('./pages/dashboard/dashboard.component'));
+// const Users = lazy(() => import('./pages/users/users.component'));
 
 
 class App extends Component {
   render() {
     const { match } = this.props
     return (
-      <Suspense fallback={<Spinner />}>
+      // <Suspense fallback={<Spinner />}>
         <div className="app-container" style={{overflowY: 'hidden'}}>
           <Header />
           <SidBar />
@@ -26,7 +28,7 @@ class App extends Component {
               <Redirect to="/dashboard" />
           </Switch>
         </div>
-      </Suspense>
+      // </Suspense>
     );
   }
 }
