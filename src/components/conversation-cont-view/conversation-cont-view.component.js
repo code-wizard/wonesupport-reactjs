@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { WoneContView, WoneInnerHeader, WoneInnerMain } from '../common';
 import CallDropDown from './call-dropdown.component';
-// import CallOverlay from './call-overlay.component';
+import CallOverlay from './call-overlay.component';
 import PhoneModal from './phone-modal.component';
 import './conversation-cont-view.styles.scss';
 
@@ -205,7 +205,7 @@ class ConversationContentView extends Component {
                 {/* End Tabs */}
                 </WoneInnerMain>
 
-                {/* {!isCallDropdown && <CallOverlay /> } */}
+                {<CallOverlay />}
                 <PhoneModal show={this.state.setShow} handleClose={this.handleClose}/>
           </WoneContView>
         )

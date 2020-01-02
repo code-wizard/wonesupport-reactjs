@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const CallDropDown = ({ close, openModal }) => {
     return(
         <div className="call_dropdown">
-            <Link href="#" id="call_init">
+            <Link to="#" id="call_init">
                 <span className="-icon"><i className="phone-call-icon"></i></span>
                 <span><b>Call</b>Wonesupport Call</span>
             </Link>
@@ -16,3 +16,4 @@ const CallDropDown = ({ close, openModal }) => {
     )
 }
 export default CallDropDown;
+// onClick={}

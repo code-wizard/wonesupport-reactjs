@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, ModalBody } from 'react-bootstrap';
+import { Modal, ModalBody, TabContainer, TabContent, TabPane, Nav, NavItem } from 'react-bootstrap';
 import './conversation-cont-view.styles.scss';
 
 const PhoneModal = ({ show, handleClose }) => (

@@ -515,3 +515,227 @@
 .login-modal .dial__chat i, .login-modal .dial__call i {
     filter: brightness(5);
 }
+.call__overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+    background: #0F1418;
+    z-index: 1999;
+}
+.call__overlay.small-size {
+    width: 240px;
+    height: 185px;
+    top: 60px;
+    left: 77%;
+    border-radius: 5px;
+}
+.call__options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.call__options .call__header {
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.call__overlay.small-size .call__options .call__header {
+    padding: 10px;
+}
+.call__options .expand_icon {
+    border-radius: 5px;
+    display: flex;
+    padding: 5px;
+    background: rgba(250, 250, 250, 0.5);
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.call__overlay.small-size .call__options .call__header .expand_icon {
+    width: 24px;
+    height: 24px;
+}
+.expand-icon {
+    background-image: url(../../assets/img/icons/expand-icon.svg);
+}
+.users__options {
+    display: flex;
+}
+.call__overlay.small-size .users__options {
+    display: flex;
+    flex-direction: column;
+}
+.on-call, .add_tocall {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.add_tocall {
+    background: #303030;
+}
+.call__overlay.small-size .users__options .on-call, .call__overlay.small-size .users__options .add_tocall {
+    width: 30px;
+    height: 30px;
+    margin: 0 0 5px;
+    font-size: 10px;
+}
+.call__overlay.small-size .users__options .on-call .-icon, .call__overlay.small-size .users__options .add_tocall .-icon {
+    width: 17px;
+    height: 17px;
+}
+.user-add-icon {
+    background-image: url(../../assets/img/icons/user-add-icon.svg);
+}
+.service-profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2em;
+    height: 240px;
+}
+.call__options .service-profile-img {
+    color: #FFFFFF;
+    flex-direction: column;
+    font-weight: 100;
+}
+.profile-img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+.service-profile-img .profile-img {
+    width: 150px;
+    height: 150px;
+}
+.call__options .service-profile-img .profile-img {
+    margin-bottom: 25px;
+}
+.call__overlay.small-size .service-profile-img .profile-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.service-profile-img .profile-img span {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.service-profile-img .profile-img > span {
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(78, 135, 176, 0.25) 0%, rgba(34, 99, 146, 0.2) 100%);
+    animation: icon-shadow-pulse 1s infinite;
+}
+.call__overlay.small-size .service-profile-img .profile-img > span {
+    padding: 2px;
+    animation: none;
+}
+.service-profile-img .profile-img > span > span > span {
+    padding: 6px;
+    background: linear-gradient(60deg, rgba(49, 88, 116, 0.86) 0%, rgba(34, 99, 146, 0.2) 100%);
+}
+.call__overlay.small-size .service-profile-img .profile-img > span > span span {
+    padding: 3px;
+}
+.call__options .service-profile-img h6 {
+    font-size: 25px;
+    font-weight: 100;
+}
+.call__overlay.small-size .service-profile-img h6 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.call__options .service-profile-img p {
+    font-weight: 100;
+    font-size: 12px;
+    font-weight: 100;
+}
+.call__overlay.small-size .service-profile-img p {
+    font-size: 10px;
+}
+.call__options .call__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+.call__options .call__footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.control__buttons {
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    display: block;
+    margin-right: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.control__buttons {
+    width: 50px;
+    height: 50px;
+    background: #303030;
+    transition: 0.2s ease-in-out;
+}
+.control__buttons.fff {
+    background: #FFFFFF;
+}
+.call__overlay.small-size .control__buttons {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+.control__buttons .-icon {
+    width: 20px;
+    height: 20px;
+}
+.call__overlay.small-size .control__buttons .-icon {
+    width: 15px;
+    height: 15px;
+}
+.microphone-icon {
+    background-image: url(../../assets/img/icons/microphone-icon.svg);
+}
+.cancel-video-icon {
+    background-image: url(../../assets/img/icons/cancel-video-icon.svg);
+}
+.record-call-2-icon {
+    background-image: url(../../assets/img/icons/record-call-2-icon.svg);
+}
+.control__buttons.chatMessage .-icon i {
+    filter: invert(1);
+}
+.end-call-2-icon {
+    background-image: url(../../assets/img/icons/end-call-2-icon.svg);
+}
+.control__buttons.cancel__call {
+    background: red;
+}
+.resize-icon {
+    background-image: url(../../assets/img/icons/resize-icon.svg);
+}

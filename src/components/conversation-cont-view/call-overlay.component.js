@@ -3,8 +3,8 @@ import React from 'react';
 
 const CallOverlay = () => {
     return(
-        <div class="call__overlay">
-        <div class="call__options">
+        <div className="call__overlay">
+        <div className="call__options">
             {/* Header section */}
           <div className="call__header">
             <span className="expand_icon" id="viewToggle">
