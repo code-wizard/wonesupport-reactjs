@@ -1,0 +1,235 @@
+.wone__tab-content {
+    padding: 20px;
+}
+.payment__type-table {
+    padding: 1em 0;
+    font-weight: 300;
+    .table {
+        font-size: 13px;
+        width: 100%;
+        margin-bottom: 1rem;
+        color: #212529;
+        tr {
+            th {
+                font-weight: 400;
+                border-bottom: 1px solid #DEDEDE;
+                border-top: 1px solid #e2e2e2;
+                vertical-align: middle;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+            td {
+                vertical-align: middle;
+                padding: 0.75rem;
+                border-top: 1px solid #e2e2e2;
+                border-top: 1px solid #e2e2e2;
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+        min-width: 60px;
+    }
+}
+.medium_view {
+    width: 55%;
+}
+.update_card {
+    text-decoration: underline;
+}
+.section {
+    .header-content {
+        text-align: center;
+        padding: 1em 0;
+    }
+    .wone__tab-content {
+        padding: 0;
+        article {
+            padding: 1em;
+            .form-group > * {
+                outline: none;
+                font-size: 14px;
+                font-weight: 100;
+            }
+            .form-group {
+                margin: 0.5rem 0;
+                position: relative;
+                .form-control {
+                    max-width: 100%;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    background: transparent;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px solid transparent;
+                    height: 40px;
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    .card__master { 
+        position: relative;
+        background: #3976be;
+        padding: 1em;
+        border-radius: 5px;
+        height: 200px;
+        margin-bottom: 1em;
+        margin: 10px;
+        border: 1px solid #EAEAEA;
+        box-shadow: 0 6px 14px 1px rgba(0, 0, 0, 0.08);
+        .master.-icon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .form-control::placeholder {
+        color: #fff;
+    }
+}
+.mastercard-icon {
+    background-image: url(../assets/img/icons/mastercard.svg);
+}
+.toolTip {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        .info {
+            display: block;
+        }
+    }
+        .info_q {
+        position: absolute;
+        width: 100px;
+        top: -8px;
+        color: #FFFFFF;
+        i {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            display: block;
+            color: #3976be;
+            text-align: center;
+            font-style: normal;
+        }
+    }
+        .info {
+            display: none;
+            position: absolute;
+            top: 0;
+            width: 120px;
+            left: 25px;
+            text-align: center;
+            font-size: 10px;
+            background: #fff;
+            border-radius: 5px;
+            color: #3976be;
+            padding: 10px 5px;
+        }
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+.et_close-btn {
+    position: absolute;
+    bottom: -10%;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    right: 50%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.5);
+}
+.purchase_panel{
+    article {
+        .form-group {
+            .form-control{
+                max-width: 330px;
+            }
+        }
+    }
+}
+.wone__total {
+    background: #F8F8F8;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    text-transform: capitalize;
+    td{
+        &:first-child {
+            text-align: center;
+        }
+    }
+}
+.wone__bottom-section {
+    font-size: 13px;
+    p { 
+        margin: 10px 0;
+    }
+    a {
+        color: #3976be;
+        font-weight: 400;
+        margin-top: 1em;
+        transition: 0.2s ease-in-out;
+        display: inline-block;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.wone__bottom-section .agent-btn.wone_medium {
+    margin: 10px 0;
+}
+.payment_panel {
+        h6 {
+        font-size: 14px;
+        color: #39434A;
+    }
+}
+.agent-btn.wone_medium.gray {
+    background: #FFFFFF;
+    color: #979797;
+    border: 1px solid #979797;
+    color: #39434A;
+    margin-left: 0;
+}
+.coupon_input {
+    display:block;
+    margin: 1em 0;
+}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.wone__pay-invoice {
+    padding: 1em 0;
+    font-size: 13px;
+    .address {
+        display: block;
+        padding: 1em 0;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+.agent-btn.wone_medium.white {
+    background: #FFFFFF;
+    color: #3976be;
+    border: 1px solid #3976be;
+}

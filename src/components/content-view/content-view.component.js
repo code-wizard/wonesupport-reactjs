@@ -1,17 +1,17 @@
 import React, {Component} from 'react';
-import { Route, withRouter, Switch, Redirect } from 'react-router-dom'
+import { Route, withRouter, Switch, Redirect } from 'react-router-dom';
 import './content-view.styles.scss';
 import { WoneContView, WoneInnerHeader, NewUserBtn } from '../common';
 import CompanyProfile from '../company-profile.component';
 import Home from '../home.component';
-import LiveChat from '../live-chat/live-chat.component';
-import VoiceCall from '../live-chat/voice-call.component';
-import VideoCall from '../live-chat/video-call.component';
-import Faqs from '../live-chat/faqs.component';
-import DiscussionForum from '../live-chat/discussion-forum.component';
-import Agents from '../agents/agents.component';
-import Account from '../agents/account.component';
-import Department from '../agents/department.component';
+import LiveChat from '../channels/live-chat.component';
+import VoiceCall from '../channels/voice-call.component';
+import VideoCall from '../channels/video-call.component';
+import Faqs from '../channels/faqs.component';
+import DiscussionForum from '../channels/discussion-forum.component';
+import Agents from '../settings/agents.component';
+import Account from '../settings/account.component';
+import Department from '../settings/department.component';
 
 
 

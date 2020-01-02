@@ -1,0 +1,148 @@
+.wone__tab__style {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px 0;
+    height: 40px;
+    li {
+        border: 1px solid #ccc;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+            border-right: 1px solid transparent;
+        }
+        a {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 400;
+            width: 100%;
+            padding: 5px;
+            text-decoration: none;
+            color: #39434A;
+            background: #FFFFFF;
+            transition: 0.2s ease-in-out;
+        }
+        a.active {
+            background: #EBEBEB;
+        }
+    }
+    .-icon {
+        width: 15px;
+        height: 15px;
+        display: block;
+        margin: 0 5px;
+        i {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+.chat-tab-icon {
+    background-image: url(../../assets/img/icons/chat-tab-icon.svg);
+}
+.call-tab-icon {
+    background-image: url(../../assets/img/icons/call-tab-icon.svg);
+}
+.user-tab-icon {
+    background-image: url(../../assets/img/icons/user-tab-icon.svg);
+}
+.sync-icon {
+    background-image: url(../../assets/img/icons/sync-icon.svg);
+}
+.wone__con-card-links {
+    padding: 1em;
+    .form-inline {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #F8F8F8;
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+            width: 100%;
+        }
+        .-icon {
+            width: 15px;
+            height: 15px;
+        }
+        input {
+            border: none;
+            font-size: 12px;
+            background: transparent;
+        }
+        .form-control{
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .wone__card-div {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        height: 35px;
+        margin: 10px 0;
+        .-icon {
+            margin-right: 0;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .wone__listing-view {
+        height: 65vh;
+        overflow: scroll;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .wone__unstyled {
+            .media {
+                padding: 10px;
+                background: #FFFFFF;
+                border: 1px solid #dedede;
+                border-radius: 3px;
+                margin-bottom: 10px;
+                height: 80px;
+                overflow: hidden;
+                .profile-img {
+                    width: 30px;
+                    height: 30px;
+                }
+                .media-body {
+                    padding: 0 0 0 10px;
+                    width: 100%;
+                    h6 {
+                        color: #39434A;
+                        height: 32px;
+                        line-height: 17px;
+                        font-size: 12px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 2;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        margin-bottom: 10px;
+                    }
+                    span {
+                        font-size: 10px;
+                        opacity: 0.5;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

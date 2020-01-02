@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { WoneInnerMain } from '../common';
-import  CreateDepartment from '../agents/create-department.component';
+import  CreateDepartment from '../settings/create-department.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import './agents.styles.scss';

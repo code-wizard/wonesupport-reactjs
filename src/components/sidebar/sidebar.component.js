@@ -4,10 +4,6 @@ import { Link, withRouter } from 'react-router-dom'
 import Logo from '../../assets/img/wone-logo.svg'
 
 class SideBar extends Component {
-    componentDidMount() {
-        console.log(this.props);
-    }
-
     isPathActive = (path) => {
         return this.props.location.pathname.startsWith(path);
     }
@@ -42,7 +38,7 @@ class SideBar extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link className={this.isPathActive('/conversation') ? 'active': ''} to="/conversation">
                   <span className="-icon">
                       <i className="timing-icon"></i>
                   </span>
@@ -58,7 +54,7 @@ class SideBar extends Component {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link className={this.isPathActive('/billing') ? 'active': ''} to="/billing">
                   <span className="-icon">
                       <i className="settings-icon"></i>
                   </span>
