@@ -21,9 +21,9 @@ const Account = () => (
                             <NavItem>
                                 <Nav.Link eventKey="localization" className="nav-link">Localization</Nav.Link>
                             </NavItem>
-                            <NavItem>
+                            {/* <NavItem>
                                 <Nav.Link eventKey="owner" className="nav-link">Owner</Nav.Link>
-                            </NavItem>
+                            </NavItem> */}
                         </Nav>
                     </Col>
                     <Col sm={12} lg={12} md={12}>
@@ -144,7 +144,7 @@ const Account = () => (
                         </section>
                         </TabPane>
                         
-                        <TabPane eventKey="owner">
+                        {/* <TabPane eventKey="owner">
                             <section className="wone__tabs-contents">
                             <article className="row">
                                 <div className="col-sm-12 m-b-20">
@@ -152,7 +152,7 @@ const Account = () => (
                                 </div>
                             </article>
                             </section>
-                        </TabPane>
+                        </TabPane> */}
                     </TabContent>
                     </Col>
                 </Row>

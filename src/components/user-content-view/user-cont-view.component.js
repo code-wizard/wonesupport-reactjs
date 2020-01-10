@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { WoneContView, WoneInnerHeader, NewUserBtn, WoneInnerMain } from '../common';
+import { WoneContView, WoneInnerHeader, WoneInnerMain } from '../common';
 import AdminCallView from '../admin-call-view/admin-call-view.component';
 import CustomerCallView from '../customer-call-view/customer-call-view.component';
 import './user-cont-view.styles.scss';
@@ -10,7 +10,7 @@ class UserContentView extends Component {
         return(
           <WoneContView>
             <WoneInnerHeader flexEnd>
-                <NewUserBtn />
+                {/* <NewUserBtn /> */}
             </WoneInnerHeader> 
             <WoneInnerMain>
               <article>

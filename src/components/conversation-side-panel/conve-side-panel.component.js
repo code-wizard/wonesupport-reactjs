@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './conve-side-panel.styles.scss';
 import { WoneSidePanel, WoneInnerHeader } from '../common';
 
 
 class ConversationSidePanel extends Component {
+
+    isPathActive = (path) => {
+        return this.props.location.pathname.startsWith(path);
+    }
+
     render() {
         return(
             <WoneSidePanel>
                 <WoneInnerHeader wonePadd_15>
                     <ul className="wone__tab__style">
-                        <li><Link to="/" className="active"><span className="-icon"><i className="chat-tab-icon"></i></span> Chats</Link></li>
-                        <li><Link to="/"><span className="-icon"><i className="call-tab-icon"></i></span> Calls</Link></li>
+                        <li><Link className={this.isPathActive('/conversation') ? 'active': ''} to="/conversation"><span className="-icon"><i className="chat-tab-icon"></i></span> Chats</Link></li>
+                        <li><Link className={this.isPathActive('/all-users') ? 'active': ''} to="/all-users"><span className="-icon"><i className="call-tab-icon"></i></span> Calls</Link></li>
                         <li><Link to="/"><span className="-icon"><i className="user-tab-icon"></i></span> Users</Link></li>
                     </ul>
                 </WoneInnerHeader>
@@ -135,4 +140,4 @@ class ConversationSidePanel extends Component {
     }
 }
 
-export default ConversationSidePanel;    
+export default withRouter(ConversationSidePanel);    

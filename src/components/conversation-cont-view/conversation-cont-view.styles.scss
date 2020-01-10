@@ -416,9 +416,15 @@
     font-size: 14px;
     font-weight: 100;
 }
-.wone__tab-content.no-tabs .form-control {
-    max-width: 100%;
-}
+.wone__admin-chat{
+    .wone-tab-content {
+        .form-group {
+            .form-control {
+                max-width: 100%;
+            }
+        }
+    }
+} 
 .agent-btn.chat-send {
     width: 45px;
     height: 40px;

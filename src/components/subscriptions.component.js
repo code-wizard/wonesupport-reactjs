@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { WoneInnerMain } from './common';
 import { Modal, ModalBody } from 'react-bootstrap';
-import './payment-reference.styles.scss';
+import './subscriptions.styles.scss';
 
 
 
-class PaymentReference extends Component {
+class Subscriptions extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,13 +30,13 @@ class PaymentReference extends Component {
             toggleCoupon: !this.state.toggleCoupon
         })
     }
-    toggleHidden = () => {
-        this.setState({
-            isHidden: !this.state.isHidden
-        })
-    }
+    // toggleHidden = () => {
+    //     this.setState({
+    //         isHidden: !this.state.isHidden
+    //     })
+    // }
     render() {
-        const { isHidden, toggleCoupon } = this.state;
+        // const { isHidden, toggleCoupon } = this.state;
         return(
             <WoneInnerMain>
                 <section className="col-sm-12 col-md-12 col-lg-12">
@@ -68,15 +68,15 @@ class PaymentReference extends Component {
                         </table>
                         </article>
                     </div>
-                    {!isHidden && <div className="purchase_panel" id="purchase_panel">
+                    <div className="purchase_panel" id="purchase_panel">
                         <article>
                         <table className="table">
                             <thead>
                             <tr>
-                                <th scope="col">Product</th>
                                 <th scope="col">Plan</th>
+                                <th scope="col"></th>
                                 <th scope="col">No. of agent</th>
-                                <th scope="col">Details</th>
+                                <th scope="col"></th>
                                 <th scope="col">Amount</th>
                             </tr>
                             </thead>
@@ -86,11 +86,13 @@ class PaymentReference extends Component {
                                 <div className="form-group">
                                     <select className="form-control select-type">
                                     <option>Choose...</option>
-                                    <option selected>Standard</option>
+                                    <option selected>Monthly</option>
+                                    <option>Quarterly</option>
+                                    <option>Annually</option>
                                     </select>
                                 </div>
                                 </td>
-                                <td>Quarterly</td>
+                                <td></td>
                                 <td>
                                 <div className="form-group">
                                     <select class="form-control select-type">
@@ -109,7 +111,7 @@ class PaymentReference extends Component {
                                     </select>
                                 </div>
                                 </td>
-                                <td>3 months</td>
+                                <td></td>
                                 <td>$4.5</td>
                             </tr>
                             <tr className="wone__total">
@@ -121,15 +123,15 @@ class PaymentReference extends Component {
                         </article>
                         <article>
                         <div className="wone__bottom-section">
-                            <button className="btn agent-btn wone_medium" id="purchase" onClick={this.toggleHidden}>Purchase</button>
+                            <button className="btn agent-btn wone_medium" id="purchase">Save</button>
                             <p>Cancel product subscriptions or account. <br />
                             Remove product from your current subscription or cancel your account.
                             </p>
                             <Link to="#">Go to cancellations</Link>
                         </div>
                         </article>
-                    </div>}
-                    {isHidden && <div className="payment_panel medium_view" id="payment_panel">
+                    </div>
+                    {/* {isHidden && <div className="payment_panel medium_view" id="payment_panel">
                         <article>
                         <h6>Coupon</h6>
                         <button className="btn agent-btn wone_medium gray" id="add_coupon" onClick={this.toggleCouponHandler}>Add coupon</button>
@@ -154,7 +156,7 @@ class PaymentReference extends Component {
                             <button className="btn agent-btn white-btn wone_medium white" id="cancel_purchase" onClick={this.toggleHidden}>Back</button>
                         </div>
                         </article>
-                    </div>}
+                    </div>} */}
                     </div>
                 </section>
                 <Modal dialogClassName={"section"} show={this.state.setShow} onHide={this.handleClose} centered>
@@ -222,4 +224,4 @@ class PaymentReference extends Component {
     }
 }
 
-export default PaymentReference;
+export default Subscriptions;

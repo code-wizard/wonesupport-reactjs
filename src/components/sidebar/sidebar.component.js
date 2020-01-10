@@ -38,7 +38,7 @@ class SideBar extends Component {
               </Link>
             </li>
             <li>
-              <Link className={this.isPathActive('/conversation') ? 'active': ''} to="/conversation">
+              <Link className={this.isPathActive('/report') ? 'active': ''} to="/report">
                   <span className="-icon">
                       <i className="timing-icon"></i>
                   </span>
@@ -54,7 +54,7 @@ class SideBar extends Component {
               </Link>
             </li>
             <li>
-              <Link className={this.isPathActive('/billing') ? 'active': ''} to="/billing">
+              <Link className={this.isPathActive('/settings') ? 'active': ''} to="/settings">
                   <span className="-icon">
                       <i className="settings-icon"></i>
                   </span>

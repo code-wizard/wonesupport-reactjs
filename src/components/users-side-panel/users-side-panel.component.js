@@ -24,7 +24,7 @@ class UsersSidePanel extends Component {
                <div className="wone-links">
                   <div className="links-accordions">
                     <div className="link-accordion">
-                        <Accordion>
+                        <Accordion defaultActiveKey="0">
                             <div className="card-header collapsed">
                                 <Accordion.Toggle eventKey="0">
                                     Start guide
@@ -36,7 +36,7 @@ class UsersSidePanel extends Component {
                             <Accordion.Collapse eventKey="0">
                                 <div className="wrap-linker">
                                     <div className="wrap-full-size">
-                                        <Link to="#">
+                                        <Link to="/conversation">
                                             <div className="wone_admin-tag">
                                                 <div className="tag-images">
                                                     <img src={require("../../assets/img/icons/live-chats-icon.svg")} alt="live chat" />
@@ -68,7 +68,7 @@ class UsersSidePanel extends Component {
                                             </div>
                                         </Link> 
                                     </div>
-                                    <div className="wrap-full-size">
+                                    {/* <div className="wrap-full-size">
                                         <Link to="#">
                                             <div className="wone_admin-tag">
                                                 <div className="tag-images">
@@ -78,8 +78,8 @@ class UsersSidePanel extends Component {
                                                 <p>Learn more about Video call</p>
                                             </div>
                                         </Link> 
-                                    </div>
-                                    <div className="wrap-full-size">
+                                    </div> */}
+                                    {/* <div className="wrap-full-size">
                                         <Link to="#">
                                             <div className="wone_admin-tag">
                                                 <div className="tag-images">
@@ -89,8 +89,8 @@ class UsersSidePanel extends Component {
                                                 <p>Learn more about Discussion Forum</p>
                                             </div>
                                         </Link> 
-                                    </div>
-                                    <div className="wrap-full-size">
+                                    </div> */}
+                                    {/* <div className="wrap-full-size">
                                         <Link to="#">
                                             <div className="wone_admin-tag">
                                                 <div className="tag-images">
@@ -100,28 +100,28 @@ class UsersSidePanel extends Component {
                                                 <p>Learn more about live chat</p>
                                             </div>
                                         </Link> 
-                                    </div>
+                                    </div> */}
                                 </div>
                             </Accordion.Collapse>
-                            <div className="card-header">
+                            {/* <div className="card-header">
                                 <Accordion.Toggle eventKey="1">
                                     People
                                 </Accordion.Toggle>
                             </div>
                             <Accordion.Collapse eventKey="1">
                                 <div></div>
-                            </Accordion.Collapse>
+                            </Accordion.Collapse> */}
                         </Accordion>
                     </div>
                   </div>
-                  <ul className="links-accordions">
+                  {/* <ul className="links-accordions">
                     <li>
                         <Link to="#">Conversations</Link>
                     </li>
                     <li className="links-accordions">
                         <Link to="#">Accounts</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                </div>
            </WoneSidePanel> 
         );
