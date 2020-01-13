@@ -5,6 +5,8 @@ import './header.styles.scss';
 import SearchInput from '../search-input/search-input.component';
 import Profile from '../../assets/img/users/user3.jpg';
 import DropdownMenu from '../dropdown-menu/dropdown-menu.component';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBell, faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 
 
 class Header extends Component {
@@ -55,10 +57,15 @@ class Header extends Component {
               <div className="collapse navbar-collapse right">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link className="nav-link" to="#">Bell</Link>
+                    <Link className="nav-link bell-icon" to="#">
+                      <FontAwesomeIcon icon={faBell} size="lg" />
+                      <span className="square-8 bg-danger pos-absolute t-15 r-0 rounded-circle"></span>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="#">Help?</Link>
+                    <Link className="nav-link" to="#">
+                      <FontAwesomeIcon icon={faQuestionCircle} size="lg" />
+                    </Link>
                   </li>
                   <li className="nav-item dropdown" onClick={this.toggleOffDropdown}>
                     <Link className="nav-link dropdown-toggle" to="#">

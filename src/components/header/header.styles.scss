@@ -225,30 +225,23 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
 }
-// @media (max-width: 991px) {
-//     .wone-main-header {
-//         left: 0;
-//         width: 100%;
-//         .navbar {
-//             padding: 0 15px;
-//             margin: auto;
-//             height: 100%;
-//         }
-//     }
-//     .wone-main-header nav {
-//         a {
-//             height: unset;
-//         }
-//         .wone-inner-wrapper {
-//             display: none;
-//         }
-//         .navbar-band{
-//             span {
-//                 display: none;
-//             }
-//             img {
-//                 display: block;
-//             }
-//         }
-//     }
-// }
+.square-8 {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+}
+.rounded-circle {
+    border-radius: 50%;
+}
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+.pos-absolute {
+    position: absolute;
+}
+.t-15 {
+    top: 19px;
+}
+.r-0 {
+    right:267px;
+}
