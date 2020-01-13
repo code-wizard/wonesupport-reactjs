@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component }  from 'react';
 import { WoneInnerMain } from '../common';
 import Chart from '../chart';
 import './chat-report.style.scss';
 
-class ChatReport extends Component {
+
+
+class VoiceReport extends Component {
     render() {
         return(
-            <WoneInnerMain grayBg>
+            <WoneInnerMain>
                 <section className="col-sm-12 col-md-12 col-lg-12">
                     <div className="panel__title">
                     <div className="label__wrap">Current activity</div>
@@ -40,7 +42,7 @@ class ChatReport extends Component {
                 </section>
                 <section className="col-sm-12 col-md-12 col-lg-12">
                     <div className="panel__title">
-                        <div className="label__wrap">Chat report</div>
+                        <div className="label__wrap">Voice call report</div>
                     </div>
 
                     <div className="white__bg">
@@ -183,10 +185,10 @@ class ChatReport extends Component {
                     <div className="panel__title">
                         <div className="filter__wrapper">
                         <div className="label__wrap">Agent activity</div>
-                        <div className="form-group form_wrapper with_select">
-                            <select className="form-control select-type select">
-                            <option>Choose...</option>
-                            <option selected>10 August</option>
+                        <div class="form-group form_wrapper">
+                            <select class="form-control select-type">
+                                <option>Choose...</option>
+                                <option selected>All Department</option>
                             </select>
                         </div>
                         </div>
@@ -265,4 +267,4 @@ class ChatReport extends Component {
     }
 }
 
-export default ChatReport;
+export default VoiceReport;

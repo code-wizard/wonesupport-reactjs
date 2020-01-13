@@ -92,7 +92,7 @@ class Subscriptions extends Component {
                                     </select>
                                 </div>
                                 </td>
-                                <td></td>
+                                <td><span style={{width: '50px', display: 'block'}}></span></td>
                                 <td>
                                 <div className="form-group">
                                     <select class="form-control select-type">
@@ -111,7 +111,7 @@ class Subscriptions extends Component {
                                     </select>
                                 </div>
                                 </td>
-                                <td></td>
+                                <td><span style={{width: '50px', display: 'block'}}></span></td>
                                 <td>$4.5</td>
                             </tr>
                             <tr className="wone__total">

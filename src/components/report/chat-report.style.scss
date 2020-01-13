@@ -242,3 +242,7 @@
     background: transparent;
     border: none;
 }
+.form_wrapper.form-group .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
