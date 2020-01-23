@@ -1,0 +1,1 @@
+export const LOGIN_API = `/accounts/rest-auth/login/`;

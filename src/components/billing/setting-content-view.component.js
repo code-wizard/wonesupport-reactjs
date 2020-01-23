@@ -11,6 +11,7 @@ import DiscussionForum from '../channels/discussion-forum.component';
 import Agents from '../settings/agents.component';
 import Account from '../settings/account.component';
 import Department from '../settings/department.component';
+import SupportGroup from '../settings/support-group.component';
 
 
 const SettingContentView = ({ match }) => {
@@ -30,6 +31,7 @@ const SettingContentView = ({ match }) => {
                 <Route path={`${match.path}/discussion-forum`} component={DiscussionForum} />
                 <Route path={`${match.path}/account`} component={Account} />
                 <Route path={`${match.path}/department`} component={Department} />
+                <Route path={`${match.path}/support-group`} component={SupportGroup} />
             </Switch>
         </WoneContView>
     )

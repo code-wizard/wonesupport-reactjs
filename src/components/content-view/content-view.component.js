@@ -9,7 +9,6 @@ import Home from '../home.component';
 
 
 class ContentView extends Component {
-    componentDidMount() { }
     render() {
         const {match} = this.props
         return (

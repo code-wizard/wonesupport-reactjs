@@ -36,7 +36,7 @@ class UsersSidePanel extends Component {
                             <Accordion.Collapse eventKey="0">
                                 <div className="wrap-linker">
                                     <div className="wrap-full-size">
-                                        <Link to="/conversation">
+                                        <Link to="/app/conversation">
                                             <div className="wone_admin-tag">
                                                 <div className="tag-images">
                                                     <img src={require("../../assets/img/icons/live-chats-icon.svg")} alt="live chat" />

@@ -15,8 +15,8 @@ class ConversationSidePanel extends Component {
             <WoneSidePanel>
                 <WoneInnerHeader wonePadd_15>
                     <ul className="wone__tab__style">
-                        <li><Link className={this.isPathActive('/conversation') ? 'active': ''} to="/conversation"><span className="-icon"><i className="chat-tab-icon"></i></span> Chats</Link></li>
-                        <li><Link className={this.isPathActive('/all-users') ? 'active': ''} to="/all-users"><span className="-icon"><i className="call-tab-icon"></i></span> Calls</Link></li>
+                        <li><Link className={this.isPathActive('/app/conversation') ? 'active': ''} to="/app/conversation"><span className="-icon"><i className="chat-tab-icon"></i></span> Chats</Link></li>
+                        <li><Link className={this.isPathActive('/app/all-users') ? 'active': ''} to="/app/all-users"><span className="-icon"><i className="call-tab-icon"></i></span> Calls</Link></li>
                         <li><Link to="/"><span className="-icon"><i className="user-tab-icon"></i></span> Users</Link></li>
                     </ul>
                 </WoneInnerHeader>

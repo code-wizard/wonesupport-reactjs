@@ -15,11 +15,11 @@ class ReportSidePanel extends Component {
               <WoneInnerHeader>
                   <span className="page-title">Report</span>
               </WoneInnerHeader> 
-                <div className="wone-links" style={{height: '82vh'}}>
+                <div className="wone-links">
                     <ul style={{marginTop: '20px'}}>
-                        <li><Link className={this.isPathActive('/report/chat-report') ? 'active': ''} to="/report/chat-report">Chat report</Link></li>
-                        <li><Link className={this.isPathActive('/report/voice-report') ? 'active': ''} to="/report/voice-report">Voice call report</Link></li>
-                        <li><Link className={this.isPathActive('/report/faq-report') ? 'active': ''} to="/report/faq-report">Faq report</Link></li>
+                        <li><Link className={this.isPathActive('/app/report/chat-report') ? 'active': ''} to="/app/report/chat-report">Chat report</Link></li>
+                        <li><Link className={this.isPathActive('/app/report/voice-report') ? 'active': ''} to="/app/report/voice-report">Voice call report</Link></li>
+                        <li><Link className={this.isPathActive('/app/report/faq-report') ? 'active': ''} to="/app/report/faq-report">Faq report</Link></li>
                     </ul>
                 </div>
            </WoneSidePanel>

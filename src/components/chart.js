@@ -20,7 +20,7 @@ class Chart extends Component {
             <div className="chart">
                 <Line
                     data={this.state.chartData}
-                    width={913}
+                    width={'100%'}  
                     height={456}
                     options={{ maintainAspectRatio: false }}
                 />

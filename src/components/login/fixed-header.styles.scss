@@ -1,0 +1,18 @@
+.wonesupport-landing-fixed-header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.wonesupport-landing-fixed-header nav {
+    height: 90px;
+}
+.link-home a {
+    color: #1F2B3A;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.link-home a:hover {
+    color: #FFFFFF;
+}
