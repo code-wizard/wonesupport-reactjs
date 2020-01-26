@@ -12,8 +12,9 @@ class App extends Component {
     return (
         <div>
           <Switch>
-              <Route path={`${match.path}app`} component={AppRoutes} />
               <Route path="/login" component={Login} />
+              <Route exact path="/" component={Login} />
+              <Route path={`${match.path}app`} component={AppRoutes} />
           </Switch>
         </div>
     );

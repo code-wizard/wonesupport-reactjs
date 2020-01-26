@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
 
-// import userReducer from './user/user.reducer';
-import loginReducer from './login/login.reducer'
+import fetchAgentReducer from './fetch-agent/fetch-agent.reducer';
+import loginReducer from './login/login.reducer';
+import fetchDepartmentReducer from './fetch-department/fetch-department.reducer'
 
 export default combineReducers({
-    // user: userReducer,
+    fetchAgent: fetchAgentReducer,
+    fetchDepartment: fetchDepartmentReducer,
     login: loginReducer
-    
 })
