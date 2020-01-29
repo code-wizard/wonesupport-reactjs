@@ -11,5 +11,5 @@ export const POST_AGENT_API = `/business/api/agents/onboard`;
 export const FETCH_POST_DEPARTMENT_API = `/business/api/departments`;
 
 // fetch support group department name
-export const GET_SUPPORT_GROUP_API = `/business/api/support-group/`;
+export const GET_SUPPORT_GROUP_API = `/business/api/support-group/`;    
 

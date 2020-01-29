@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { agentRequest, cleanupPostAgentError } from '../../redux/post-agent/post-agent.action';
 import { getDepartment } from '../../redux/fetch-department/fetch-department.action';
-import Select from 'react-select';
 import { Formik } from 'formik'
 import * as Yup from 'yup';
 import './agents.styles.scss';
@@ -18,10 +17,14 @@ const LoginSchema = Yup.object().shape({
     email: Yup.string()
         .email('please provide a valid email')
         .required('email cannot be empty'),
-    name: Yup.string()
+    first_name: Yup.string()
         .min(2, 'name is too short')
         .max(50, 'name is too long')
-        .required('please provide name'),
+        .required('please provide first name'),
+    last_name: Yup.string()
+        .min(2, 'name is too short')
+        .max(50, 'name is too long')
+        .required('please provide last name'),
     phone: Yup.string()
         .matches(phoneRegExp, 'Phone number is not valid')
         .required('please provide phone number'),
@@ -55,7 +58,8 @@ const CreateAgent = ({ close }) => {
         <Formik 
           initialValues={{
             email: '',
-            name: '',
+            first_name: '',
+            last_name: '',
             phone: '',
             password1: '',
             short_description: '',
@@ -67,7 +71,8 @@ const CreateAgent = ({ close }) => {
                 try{
                     const payload = {
                         email: values.email,
-                        name: values.name,
+                        first_name: values.first_name,
+                        last_name: values.last_name,
                         phone: values.phone,
                         password1: values.password1,
                         short_description: values.short_description,
@@ -130,7 +135,7 @@ const CreateAgent = ({ close }) => {
                     </div>
                     <div className="row">
                     <div className="col-sm-12 col-md-3 col-lg-3">
-                        <label htmlFor="agent-name">Name</label>
+                        <label htmlFor="agent-name">First name</label>
                     </div>
                     <div className="col-sm-12 col-md-9 col-lg-9">
                         <div className="form-group">
@@ -138,12 +143,31 @@ const CreateAgent = ({ close }) => {
                                 type="text" 
                                 id="agent-name" 
                                 className="form-control"
-                                name="name"
-                                onChange={handleChange('name')}
-                                value={values.name} 
-                                onBlur={handleBlur('name')}
+                                name="first_name"
+                                onChange={handleChange('first_name')}
+                                value={values.first_name} 
+                                onBlur={handleBlur('first_name')}
                             />
-                            { errors.name && touched.name ? <p style={{ color: 'red', marginTop: '.5rem' }}>{errors.name}</p> : null }
+                            { errors.first_name && touched.first_name ? <p style={{ color: 'red', marginTop: '.5rem' }}>{errors.first_name}</p> : null }
+                        </div>
+                    </div>
+                    </div>
+                    <div className="row">
+                    <div className="col-sm-12 col-md-3 col-lg-3">
+                        <label htmlFor="agent-name">First name</label>
+                    </div>
+                    <div className="col-sm-12 col-md-9 col-lg-9">
+                        <div className="form-group">
+                            <input 
+                                type="text" 
+                                id="agent-name" 
+                                className="form-control"
+                                name="last_name"
+                                onChange={handleChange('last_name')}
+                                value={values.last_name} 
+                                onBlur={handleBlur('last_name')}
+                            />
+                            { errors.last_name && touched.last_name ? <p style={{ color: 'red', marginTop: '.5rem' }}>{errors.last_name}</p> : null }
                         </div>
                     </div>
                     </div>
@@ -214,7 +238,7 @@ const CreateAgent = ({ close }) => {
                                     className="react-select"
                                     classNamePrefix="react-select"
                                     options={DepartmentState && DepartmentState}
-                                    // placeholder="Department"
+                                    placeholder=""
                                     onChange={setFieldValue}
                                     onBlur={setFieldTouched}
                                     value={values.department}
@@ -233,7 +257,7 @@ const CreateAgent = ({ close }) => {
                                 <SelectSupport 
                                     className="react-select"
                                     classNamePrefix="react-select"
-                                    // placeholder="Support Channel"
+                                    placeholder=""
                                     onChange={setFieldValue}
                                     onBlur={setFieldTouched}
                                     value={values.support_group_id}
@@ -255,7 +279,7 @@ const CreateAgent = ({ close }) => {
                             value={values.role} 
                             onChange={handleChange('role')}
                             onBlur={handleBlur('role')}>
-                            {/* <option value="" label="Select role"></option> */}
+                            <option value="" label=""></option>
                             <option value="agent">Agent</option>
                         </select>
                         { errors.role && touched.role ? <p style={{ color: 'red', marginTop: '.5rem' }}>{errors.role}</p> : null }
