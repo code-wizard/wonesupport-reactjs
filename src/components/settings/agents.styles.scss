@@ -319,3 +319,84 @@ article.add-border-line {
 .manage-share-icon {
     background-image: url(../../assets/img/icons/manage-share-icon.svg);
 }
+
+.react-select {
+	outline: none !important;
+    box-shadow: none !important;
+}
+.react-select__value-container {
+	outline: none !important;
+    box-shadow: none !important;
+    padding: .375rem .75rem !important;
+	height: calc(1.5em + .75rem + 2px) !important;
+    background: #fff !important;
+    color:#495057 !important;
+    font-size: 14px !important;
+    font-weight: 100 !important;
+}
+.react-select .react-select__placeholder {
+	color: #495057 !important;
+}
+.react-select__control {
+	border-radius: .25rem !important;
+	border: 1px solid #ced4da !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+.react-select__indicator-separator {
+	display: none !important;
+}
+.react-select .react-select__menu-list {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.react-select__control {
+	border-radius: .25rem !important;
+	border: 1px solid #ced4da !important;
+	background: #fff !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+.react-select__option {
+	background: whitesmoke !important;
+	color: #212529 !important;
+	&:hover,
+	&:active {
+		background: #2196F3 !important;
+		color: #212529 !important;
+	}
+}
+.react-select__option--is-selected {
+	background: whitesmoke !important;
+	color: #212529 !important;
+}
+.react-select__control--is-focused {
+	border-color: #ced4da !important;
+}
+.react-select__multi-value {
+    background: whitesmoke !important;
+	border: none;
+}
+.react-select__multi-value__remove:hover,
+.react-select__multi-value__remove:active {
+	background: whitesmoke !important;
+    color: #212529 !important;
+}
+.react-select .react-select__menu {
+	border-radius: .25rem !important;
+	z-index: 20 !important;
+	box-shadow: none !important;
+	border: 1px solid #ced4da !important;
+	border-top: none !important;
+	margin-top: -1px !important;
+	background-color: whitesmoke;
+    border-width: 1px !important;
+}
+.react-select__single-value {
+	bottom: 0;
+	top: 50%;
+	padding-top: 2px;
+}
+.wone-tab-content .form-group .react-select {
+    max-width: 300px;
+}

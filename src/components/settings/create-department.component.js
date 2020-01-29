@@ -1,17 +1,37 @@
 import React, { Component, Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import Select from 'react-select'
 import './agents.styles.scss';
+
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
 
 class CreateDepartment extends Component {
     constructor(props) {
         super(props);
-        this.state = { selectedOption: 'enabled' }
+        this.state = { 
+          selectedOption: 'enabled',
+          selectedSupport: null,
+       }
     } 
     optionChangeHandler = (event) => {
         this.setState({ selectedOption: event.target.value })
     }
+
+    handleChange = selectedSupport => {
+      this.setState(
+        { selectedSupport },
+        () => console.log(`Option selected:`, this.state.selectedSupport)
+      );
+    };
+
     render() {
+      const { selectedSupport } = this.state;
         return(
             // Create Department
            <Fragment>
@@ -54,7 +74,7 @@ class CreateDepartment extends Component {
                   </div>
                   <div className="col-sm-12 col-md-9 col-lg-9">
                     <div className="form-group">
-                      <input type="text" className="form-control" placeholder="Company’s name" />
+                      <input type="text" className="form-control" placeholder="Department’s name" />
                     </div>
                   </div>
                 </div>
@@ -66,6 +86,24 @@ class CreateDepartment extends Component {
                     <div className="form-group">
                       <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-sm-12 col-md-3 col-lg-3">
+                    <h5>Support Channels</h5>
+                  </div>
+                  <div className="col-sm-12 col-md-9 col-lg-9">
+                    <div className="form-group">
+                      <Select 
+                        value={selectedSupport}
+                        onChange={this.handleChange}
+                        className="react-select"
+                        classNamePrefix="react-select"
+                        options={options}
+                        isMulti
+                        placeholder="Support Channels"
+                      />
+                      </div>
                   </div>
                 </div>
                 <div className="row">

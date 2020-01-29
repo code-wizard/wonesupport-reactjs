@@ -1,13 +1,13 @@
 import * as types from './fetch-department.types'
 
-const agent = {
+const department = {
     isLoading: false,
     error: null,
     isSuccessful: false,
     department: {}
 }
 
-const fetchDepartmentReducer = (state = agent, action) => {
+const fetchDepartmentReducer = (state = department, action) => {
     switch (action.type) {
         case types.FETCH_DEPARTMENT_START:
             return { ...state, isLoading: true };
@@ -17,6 +17,10 @@ const fetchDepartmentReducer = (state = agent, action) => {
             return { ...state, error: action.payload, isLoading: false };
         case types.CLEAN_FETCH_DEPARTMENT_ERROR:
             return { ...state, error: null, isLoading: false, isSuccessful: false };
+        case types.GET_DEPARTMENT_SUCCESS:
+            return { ...state, department: action.payload, isLoading: false, isSuccessful: true };
+        case types.GET_DEPARTMENT_FAIL:
+            return { ...state, error: action.payload, isLoading: false };
         default:
             return state;
     }

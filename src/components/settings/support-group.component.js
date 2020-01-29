@@ -1,9 +1,28 @@
 import React, { Component } from 'react';
 import { WoneInnerMain } from '../common';
+import Select from 'react-select';
 import './support-group.styles.scss';
 
+const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' },
+  ];
+
 class SupportGroup extends Component {
+    state = {
+        selectedSupport: null
+    }
+
+    handleChange = selectedSupport => {
+        this.setState(
+          { selectedSupport },
+          () => console.log(`Option selected:`, this.state.selectedSupport)
+        );
+    };
+
     render() {
+        const { selectedSupport } = this.state
         return(
             <WoneInnerMain>
                 <form>
@@ -28,9 +47,6 @@ class SupportGroup extends Component {
                             <label htmlFor="department">Department</label>
                         </div>
                         <div className="col-sm-12 col-md-9 col-lg-9">
-                            {/* <div className="form-group">
-                            <textarea className="form-control" id="agent-description" rows="3"></textarea>
-                            </div> */}
                             <div className="form-group">
                                 <input type="text" id="department" className="form-control" />
                             </div>
@@ -41,16 +57,16 @@ class SupportGroup extends Component {
                             <label htmlFor="agent-name">Support Channel</label>
                         </div>
                         <div className="col-sm-12 col-md-9 col-lg-9">
-                            <div className="form-group">
-                            {/* <select className="form-control" 
-                                    // value={this.state.value} 
-                                    // onChange={this.handleChange}
-                                    >
-                                <option value="choose">Choose...</option>
-                                <option value="distributor">Distributor</option>
-                                <option value="sales">Sales</option>
-                            </select> */}   
-                            
+                            <div className="form-group">  
+                            <Select 
+                                value={selectedSupport}
+                                onChange={this.handleChange}
+                                className="react-select"
+                                classNamePrefix="react-select"
+                                options={options}
+                                isMulti
+                                placeholder="Support Channel"
+                            />
                             </div>
                         </div>
                         </div>

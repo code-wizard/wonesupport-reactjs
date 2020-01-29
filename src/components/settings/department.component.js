@@ -14,7 +14,8 @@ class Department extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isNewDept: false
+            isNewDept: false,
+            searchField: '',
         }
     }
 
@@ -26,10 +27,20 @@ class Department extends Component {
         this.setState({isNewDept: !this.state.isNewDept})
     }
 
+    handleTextChange = (e) => {
+        this.setState({searchField: e.target.value}, 
+          () => this.props.fetchAllDepartment(this.state.searchField))
+      }
+
+    // submitSearch = (e) => {
+    //     e.preventDefault();
+    //     const { searchField } = this.state;
+    //     this.props.fetchAllAgent(searchField);
+    // }
 
 
     render() {
-        const { isNewDept } = this.state
+        const { isNewDept, searchField } = this.state
         const { isSuccessful, department } = this.props;
         return(
             // Create Department
@@ -48,12 +59,16 @@ class Department extends Component {
                     <article className="border-bottom">
                         <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-12 search__counter">
-                            <form className="form-inline">
+                            <div className="form-inline">
                                 <div className="form-group">
-                                    <input type="search" className="form-control" placeholder="Search" />
-                                    <button type="submit" className="btn agent-btn wone_medium">Search</button>
+                                    <input type="search" className="form-control" 
+                                        placeholder="Search" 
+                                        value={searchField}
+                                        onChange={this.handleTextChange}
+                                    />
+                                    {/* <button type="submit" className="btn agent-btn wone_medium">Search</button> */}
                                 </div>
-                            </form>
+                            </div>
                             <div className="dept_counter">
                                 {/* <p>0 enabled / Unlimited Department</p> */}
                             </div>

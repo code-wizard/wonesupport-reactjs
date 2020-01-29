@@ -34,11 +34,11 @@ class Agents extends Component {
         () => this.props.fetchAllAgent(this.state.searchField))
     }
 
-    submitSearch = (e) => {
-      e.preventDefault();
-      const { searchField } = this.state;
-      this.props.fetchAllAgent(searchField);
-    }
+    // submitSearch = (e) => {
+    //   e.preventDefault();
+    //   const { searchField } = this.state;
+    //   this.props.fetchAllAgent(searchField);
+    // }
     
 
     toggleCreate = () => {
@@ -75,10 +75,10 @@ class Agents extends Component {
                         value={searchField}
                         onChange={this.handleTextChange}
                        />
-                      <button 
+                      {/* <button 
                         type="submit" 
                         className="btn agent-btn wone_medium"
-                        onClick={this.submitSearch}>Search</button>
+                        onClick={this.submitSearch}>Search</button> */}
                   </div>
                 </div>
                 <div className="dept_counter">
@@ -126,7 +126,7 @@ class Agents extends Component {
                               <td>{result.name && result.name}</td>
                               <td>{result.full_name && result.full_name}</td>
                               <td>{result.email && result.email}</td>
-                              <td>Support@wonesupport.com</td>
+                              <td>{result.support_name && result.support_name}</td>
                               <td>{result.role && result.role}</td>
                               <td>
                                 { result.is_active && result.is_active ?
