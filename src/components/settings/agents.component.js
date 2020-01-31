@@ -116,8 +116,8 @@ class Agents extends Component {
                   </thead>
                   <tbody>
                       {
-                        agent.results && agent.results.map(result => (
-                            <tr key={result.name}>
+                        agent.results && agent.results.map((result, index) => (
+                            <tr key={index}>
                               <th scope="row form-check">
                                 <input className="form-check-input" type="checkbox" />
                                   <span className={`status ${result.status === 'active' ? 'online': ''}`}>

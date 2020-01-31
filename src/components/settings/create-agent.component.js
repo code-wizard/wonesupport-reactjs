@@ -8,7 +8,7 @@ import './agents.styles.scss';
 
 // components 
 import SelectDepartment from './select-department';
-import SelectSupport from './multi-select-support-group'
+import SelectSupport from './multi-select-support-group';
 
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -47,7 +47,7 @@ const CreateAgent = ({ close }) => {
     const servererror = useSelector(state => state.agent.error)
     const DepartmentState = useSelector(state => state.fetchDepartment.department)
     const SupportGroupState = useSelector(state => state.supportGroup.support_group)
-    console.log(servererror && servererror, 'uchenna ibe')  
+    // console.log(servererror && servererror, 'uchenna ibe')  
 
     useEffect(() => {
         dispatch(getDepartment());
@@ -135,13 +135,13 @@ const CreateAgent = ({ close }) => {
                     </div>
                     <div className="row">
                     <div className="col-sm-12 col-md-3 col-lg-3">
-                        <label htmlFor="agent-name">First name</label>
+                        <label htmlFor="first-name">First name</label>
                     </div>
                     <div className="col-sm-12 col-md-9 col-lg-9">
                         <div className="form-group">
                             <input 
                                 type="text" 
-                                id="agent-name" 
+                                id="first_name" 
                                 className="form-control"
                                 name="first_name"
                                 onChange={handleChange('first_name')}
@@ -154,13 +154,13 @@ const CreateAgent = ({ close }) => {
                     </div>
                     <div className="row">
                     <div className="col-sm-12 col-md-3 col-lg-3">
-                        <label htmlFor="agent-name">First name</label>
+                        <label htmlFor="last_name">Last name</label>
                     </div>
                     <div className="col-sm-12 col-md-9 col-lg-9">
                         <div className="form-group">
                             <input 
                                 type="text" 
-                                id="agent-name" 
+                                id="last_name" 
                                 className="form-control"
                                 name="last_name"
                                 onChange={handleChange('last_name')}
@@ -230,7 +230,7 @@ const CreateAgent = ({ close }) => {
                     </div>
                     <div className="row">
                         <div className="col-sm-12 col-md-3 col-lg-3">
-                            <label htmlFor="agent-name">Department</label>
+                            <label htmlFor="department">Department</label>
                         </div>
                         <div className="col-sm-12 col-md-9 col-lg-9">
                             <div className="form-group">
@@ -250,7 +250,7 @@ const CreateAgent = ({ close }) => {
                     </div>
                     <div className="row">
                         <div className="col-sm-12 col-md-3 col-lg-3">
-                            <label htmlFor="agent-name">Support Channel</label>
+                            <label htmlFor="support_channel">Support Channel</label>
                         </div>
                         <div className="col-sm-12 col-md-9 col-lg-9">
                             <div className="form-group">
@@ -270,7 +270,7 @@ const CreateAgent = ({ close }) => {
                     </div>
                     <div className="row">
                     <div className="col-sm-12 col-md-3 col-lg-3">
-                        <label htmlFor="agent-name">Role</label>
+                        <label htmlFor="role">Role</label>
                     </div>
                     <div className="col-sm-12 col-md-9 col-lg-9">
                         <div className="form-group">

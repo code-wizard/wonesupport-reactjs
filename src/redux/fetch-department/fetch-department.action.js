@@ -49,6 +49,7 @@ export const getDepartment = () => {
         return client()
         .get(`${api.FETCH_POST_DEPARTMENT_API}`)
         .then(response => {
+            console.log(response.data.results, 'hddjjdjfhfh')
             let data = []
                 response.data.results.map((item, index) => {
                     data = [...data, {label: item.name, value: item.name, key: index}]

@@ -4,19 +4,20 @@ import { WoneInnerMain } from '../common';
 import { Formik } from 'formik'
 import * as Yup from 'yup';
 import { getDepartment } from '../../redux/fetch-department/fetch-department.action';
-import { cleanupPostSupportError, supportGroupRequest } from '../../redux/support-group/support-group.action'
+import { cleanupPostSupportError } from '../../redux/post-support-group/post-support-group.action';
+import { supportGroupRequest } from '../../redux/post-support-group/post-support-group.action';
 import './support-group.styles.scss';
 
 // component 
-import  SelectDepartment from './select-department';
+import  SelectDepartmentName from './select-department-name';
 import SupportDropdown from '../common/support-dropdown';
 
 
 const LoginSchema = Yup.object().shape({
     support_name: Yup.string()
         .required('please provide support name'),
-    department: Yup.string()
-        .required('please provide department'),
+    department_name: Yup.string()
+        .required('please provide department name'),
     support_channel: Yup.string()
         .required('please provide support channel')
 })
@@ -34,14 +35,14 @@ const SupportGroup = () => {
         <Formik 
             initialValues={{
               support_name: '',
-              department: '',
+              department_name: '',
               support_channel: '',
             }}
               onSubmit={async (values, { setSubmitting, resetForm }) => {
                   try{
                       const payload = {
                           support_name: values.support_name,
-                          department: values.department.value,
+                          department_name: values.department_name.value,
                           support_channel: values.support_channel.label
                       }
                       await dispatch(supportGroupRequest(payload));
@@ -99,19 +100,19 @@ const SupportGroup = () => {
                         </div>
                         <div className="row">
                         <div className="col-sm-12 col-md-3 col-lg-3">
-                            <label htmlFor="department">Department</label>
+                            <label htmlFor="department_name">Department</label>
                         </div>
                         <div className="col-sm-12 col-md-9 col-lg-9">
                             <div className="form-group">
-                                <SelectDepartment 
+                                <SelectDepartmentName 
                                     className="react-select"
                                     classNamePrefix="react-select"
                                     placeholder=""
                                     onChange={setFieldValue}
                                     onBlur={setFieldTouched}
-                                    value={values.department}
-                                    touched={touched.department}
-                                    error={errors.department}
+                                    value={values.department_name}
+                                    touched={touched.department_name}
+                                    error={errors.department_name}
                                     options={DepartmentState && DepartmentState}
                                 />
                             </div>
