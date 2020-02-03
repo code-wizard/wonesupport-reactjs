@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { WoneInnerMain } from '../common';
 import  CreateDepartment from '../settings/create-department.component';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,7 +7,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import './agents.styles.scss';
 
 // actions 
-import { fetchAllDepartment } from '../../redux/fetch-department/fetch-department.action'
+import { fetchAllDepartment } from '../../redux/fetch-department/fetch-department.action';
 import Spinner from '../spinner/spinner.component';
 
 class Department extends Component {
@@ -31,13 +31,6 @@ class Department extends Component {
         this.setState({searchField: e.target.value}, 
           () => this.props.fetchAllDepartment(this.state.searchField))
       }
-
-    // submitSearch = (e) => {
-    //     e.preventDefault();
-    //     const { searchField } = this.state;
-    //     this.props.fetchAllAgent(searchField);
-    // }
-
 
     render() {
         const { isNewDept, searchField } = this.state

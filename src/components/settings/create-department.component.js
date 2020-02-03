@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { Formik } from 'formik'
+import * as Yup from 'yup';
 import Select from 'react-select'
 import './agents.styles.scss';
 
@@ -10,6 +12,34 @@ const options = [
   { value: 'strawberry', label: 'Strawberry' },
   { value: 'vanilla', label: 'Vanilla' },
 ];
+
+
+const DepartmentSchema = Yup.object().shape({
+  email: Yup.string()
+      .email('please provide a valid email')
+      .required('email cannot be empty'),
+  first_name: Yup.string()
+      .min(2, 'name is too short')
+      .max(50, 'name is too long')
+      .required('please provide first name'),
+  last_name: Yup.string()
+      .min(2, 'name is too short')
+      .max(50, 'name is too long')
+      .required('please provide last name'),
+  phone: Yup.string()
+      .required('please provide phone number'),
+  password1: Yup.string()
+      .min(8, 'password must be atleast 8 characters')
+      .required('please provide password'),
+  short_description: Yup.string()
+      .required('please provide description'),
+  role: Yup.string()
+      .required('please provide role'),
+  department: Yup.string()
+      .required('please provide department'),
+  support_group_id: Yup.string()
+      .required('please provide support group')
+})  
 
 class CreateDepartment extends Component {
     constructor(props) {

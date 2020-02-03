@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const baseUrl = 'http://wonesupport.com';
+export const baseUrl = 'https://wonesupport.com';  
 
 /*
  * Configure axios to automatically add baseUrl and authorization to needed api request

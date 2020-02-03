@@ -13,7 +13,7 @@ import SelectSupport from './multi-select-support-group';
 
 const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-const LoginSchema = Yup.object().shape({
+const AgentSchema = Yup.object().shape({
     email: Yup.string()
         .email('please provide a valid email')
         .required('email cannot be empty'),
@@ -86,7 +86,7 @@ const CreateAgent = ({ close }) => {
                     setSubmitting(false);
                 }
             }}
-            validationSchema={LoginSchema}
+            validationSchema={AgentSchema}
           >
             {({
               handleChange,
